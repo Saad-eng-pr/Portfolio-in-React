@@ -39,7 +39,7 @@ const Hero = () => {
           <Suspense fallback={<CanvasLoader />}>
             <PerspectiveCamera makeDefault position={[0, 0, 20]} />
               
-            <HeroCamera>
+            <HeroCamera isMobile={isMobile}>
               <DevRoom
                 position={sizes.deskPosition}   
                 rotation={[0, -Math.PI, 0]}
