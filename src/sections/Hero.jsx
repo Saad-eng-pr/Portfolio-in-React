@@ -13,6 +13,8 @@ import CsharpLogo from "../components/CsharpLogo";
 import AngularLogo from "../components/AngularLogo";
 import JavascriptLogo from "../components/JavascriptLogo";
 import HeroCamera from "../components/HeroCamera";
+import RubiksCube from "../components/RubiksCube";
+import Pyraminx from "../components/Pyraminx";
 
 const Hero = () => {
   const isSmall = useMediaQuery({ maxWidth: 440 });
@@ -53,6 +55,8 @@ const Hero = () => {
               <CppLogo position={sizes.cppPosition} />
               <AngularLogo position={sizes.angularLogoPosition} />
               <JavascriptLogo position={sizes.javascriptPosition} />
+              <RubiksCube position={sizes.rubiksCubePosition} />
+              <Pyraminx position={sizes.pyraminxPosition} />
             </group>
 
             <ambientLight intensity={1} />

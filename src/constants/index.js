@@ -256,6 +256,8 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
     cppPosition: isSmall ? [-5, 2, 0] : isMobile ? [-7, 3, 0] : isTablet ? [-10, 2, 0] : [-12, 1, 0],
     csharpPosition: isSmall ? [-5, -10, -10] : isMobile ? [-9, -10, -10] : isTablet ? [-11, -7, -10] : [-15, -10, -15],
     javascriptPosition: isSmall ? [-5, -1, 0] : isMobile ? [-6, 2, 0] : isTablet ? [-11, -2, 0] : [-12, -3, 0],
+    rubiksCubePosition: isSmall ? [4, -5, 0] : isMobile ? [5, -5, 0] : isTablet ? [5, -5, 0] : [12, -8, 0],
+    pyraminxPosition: isSmall ? [4, -5, 0] : isMobile ? [5, -5, 0] : isTablet ? [5, -5, 0] : [-13, -8, 0],
   };
 };
 

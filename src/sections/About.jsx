@@ -42,7 +42,7 @@ const About = () => {
                         <Suspense fallback={<CanvasLoader />}>
                             <PerspectiveCamera makeDefault position={[0, 0, 10]} />
                                 <Puydedome />
-                                <OrbitControls />
+                                <OrbitControls maxPolarAngle={Math.PI / 2}/>
                             <ambientLight intensity={1} />
                             <directionalLight position={[10, 10, 10]} intensity={1} />
                         </Suspense>
