@@ -33,6 +33,9 @@ const Hero = () => {
         <p className="hero_tag text-gray_gradient">
           Étudiant Ingénieur en Informatique
         </p>
+        
+        
+
       </div>
 
       {/* 3D model below the text */}
