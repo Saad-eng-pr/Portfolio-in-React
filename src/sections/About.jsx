@@ -11,7 +11,7 @@ import Puydedome from '../components/Puydedome';
 const About = () => {
   
   return (
-    <section className='c-space my-20' id="about">
+    <section className='c-space mb-20 mt-[120px]' id="about">
         <div className='grid xl:grid-cols-3 xl:grid-rows-4 md:grid-cols-3 grid-cols-1 gap-5 h-full'>
             <div className='col-span-1 xl:row-span-2'>
                 <div className='grid-container'>

@@ -24,22 +24,37 @@ const Hero = () => {
   const sizes = calculateSizes(isSmall, isMobile, isTablet);
 
   return (
-    <section className="min-h-screen w-full flex flex-col relative" id="home">
+    <section className="min-h-screen w-full flex flex-col relative mb-20" id="home">
       {/* Phrase introductif */}
-      <div className="w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3">
+      <div className="w-full mx-auto flex flex-col sm:mt-24 mt-10 c-space gap-3 mb-20 z-10">
         <p className="sm:text-3xl text-xl font-medium text-white text-center font-generalsans">
           Bonjour, c'est Saad AMAL <span className="waving-hand">👋</span>
         </p>
         <p className="hero_tag text-gray_gradient">
           Étudiant Ingénieur en Informatique
         </p>
-        
-        
 
+        <div className="flex justify-center gap-4">
+          <button
+            onClick={() => window.open('/assets/CV-Saad.AMAL.pdf')}
+            className="text-white-600 px-6 w-40 font-semibold rounded-full border border-gray-700 
+                      hover:bg-black-200 hover:text-white transition-all duration-300 h-[60px] text-center"
+          >
+            Télécharger mon CV
+          </button>
+
+          <button
+            onClick={() => (window.location.href = '#contact')}
+            className="text-white-600 px-6 w-40 font-semibold rounded-full border border-gray-700 
+                      hover:bg-black-200 hover:text-white transition-all duration-300 h-[60px] text-center"
+          >
+            Contactez-moi
+          </button>
+        </div>
       </div>
 
       {/* 3D model below the text */}
-      <div className="w-full h-full absolute mt-10"> 
+      <div className="w-full h-full absolute mt-[100px]"> 
         <Canvas className="w-full h-full">
           <Suspense fallback={<CanvasLoader />}>
             <PerspectiveCamera makeDefault position={[0, 0, 20]} />

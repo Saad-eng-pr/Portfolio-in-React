@@ -4,10 +4,10 @@ import { div } from "three/tsl"
 
 const Experience = () => {
   return (
-    <section className="c-space my-20">
+    <section className="c-space my-20" id="work">
         <p className="head-text">Expériences profetionnelles</p>
 
-        <div className="gap-5 mt-12">
+        <div className="gap-5 mt-12 max-w-4xl xl:max-w-6xl mx-auto">
             <div className="work-content">
                 <div className="sm:py-10 py-5 sm:px-5 px-2.5">
                     {workExperiences.map(({id, name, pos, duration, icon, title, animation}) => (
