@@ -1,3 +1,58 @@
+export const technologies = [
+  {
+    name: "HTML 5",
+    icon: "/assets/html.png",
+  },
+  {
+    name: "CSS 3",
+    icon: "/assets/css.png",
+  },
+  {
+    name: "JavaScript",
+    icon: "/assets/javascript.png",
+  },
+  {
+    name: "TypeScript",
+    icon: "/assets/html.png",
+  },
+  {
+    name: "React JS",
+    icon: "/assets/html.png",
+  },
+  {
+    name: "Redux Toolkit",
+    icon: "/assets/html.png",
+  },
+  {
+    name: "Tailwind CSS",
+    icon: "/assets/html.png",
+  },
+  {
+    name: "Node JS",
+    icon: "/assets/html.png",
+  },
+  {
+    name: "MongoDB",
+    icon: "/assets/html.png",
+  },
+  // {
+  //   name: "Three JS",
+  //   icon: threejs,
+  // },
+  // {
+  //   name: "Git",
+  //   icon: git,
+  // },
+  // {
+  //   name: "Figma",
+  //   icon: figma,
+  // },
+  // {
+  //   name: "Docker",
+  //   icon: docker,
+  // },
+];
+
 export const navLinks = [
   {
     id: 1,
