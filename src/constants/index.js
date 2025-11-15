@@ -1,56 +1,56 @@
 export const technologies = [
   {
-    name: "HTML 5",
-    icon: "/assets/html.png",
+    name: "Cpp",
+    icon: "/assets/technos/cpp.png",
   },
   {
-    name: "CSS 3",
-    icon: "/assets/css.png",
+    name: "C",
+    icon: "/assets/technos/c.png",
   },
   {
-    name: "JavaScript",
-    icon: "/assets/javascript.png",
+    name: "Java",
+    icon: "/assets/technos/java.png",
   },
   {
-    name: "TypeScript",
-    icon: "/assets/html.png",
+    name: "Python",
+    icon: "/assets/technos/python.png",
   },
   {
-    name: "React JS",
-    icon: "/assets/html.png",
+    name: "Csharp",
+    icon: "/assets/technos/csharp.png",
   },
   {
-    name: "Redux Toolkit",
-    icon: "/assets/html.png",
-  },
-  {
-    name: "Tailwind CSS",
-    icon: "/assets/html.png",
+    name: "SpringBoot",
+    icon: "/assets/technos/spring.png",
   },
   {
     name: "Node JS",
-    icon: "/assets/html.png",
+    icon: "/assets/technos/nodejs.png",
   },
   {
-    name: "MongoDB",
-    icon: "/assets/html.png",
+    name: "Angular",
+    icon: "/assets/technos/angular.png",
   },
-  // {
-  //   name: "Three JS",
-  //   icon: threejs,
-  // },
-  // {
-  //   name: "Git",
-  //   icon: git,
-  // },
-  // {
-  //   name: "Figma",
-  //   icon: figma,
-  // },
-  // {
-  //   name: "Docker",
-  //   icon: docker,
-  // },
+  {
+    name: "React JS",
+    icon: "/assets/technos/reactjs.png",
+  },
+  {
+    name: "JavaScript",
+    icon: "/assets/technos/javascript.png",
+  },
+  {
+    name: "TypeScript",
+    icon: "/assets/technos/typescript.png",
+  },
+  {
+    name: "Threejs",
+    icon: "/assets/technos/threejs.svg",
+  },
+  {
+    name: "Docker",
+    icon: "/assets/technos/docker.png",
+  },
 ];
 
 export const navLinks = [
@@ -78,41 +78,6 @@ export const navLinks = [
     id: 5,
     name: 'Contact',
     href: '#contact',
-  },
-];
-
-export const clientReviews = [
-  {
-    id: 1,
-    name: 'Emily Johnson',
-    position: 'Marketing Director at GreenLeaf',
-    img: 'assets/review1.png',
-    review:
-      'Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.',
-  },
-  {
-    id: 2,
-    name: 'Mark Rogers',
-    position: 'Founder of TechGear Shop',
-    img: 'assets/review2.png',
-    review:
-      'Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.',
-  },
-  {
-    id: 3,
-    name: 'John Dohsas',
-    position: 'Project Manager at UrbanTech ',
-    img: 'assets/review3.png',
-    review:
-      'I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.',
-  },
-  {
-    id: 4,
-    name: 'Ether Smith',
-    position: 'CEO of BrightStar Enterprises',
-    img: 'assets/review4.png',
-    review:
-      'Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.',
   },
 ];
 
@@ -318,6 +283,8 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
     javascriptPosition: isSmall ? [-5, -1, 0] : isMobile ? [-6, 2, 0] : isTablet ? [-11, -2, 0] : [-12, -3, 0],
     rubiksCubePosition: isSmall ? [4, -5, 0] : isMobile ? [5, -5, 0] : isTablet ? [5, -5, 0] : [12, -8, 0],
     pyraminxPosition: isSmall ? [4, -5, 0] : isMobile ? [5, -5, 0] : isTablet ? [5, -5, 0] : [-13, -8, 0],
+    skewCubePosition: isSmall ? [3, 2, 0] : isMobile ? [5, 4, 0] : isTablet ? [10, 4, 0] : [13, 4, 0],
+    skewedCubePosition: isSmall ? [3, 2, 0] : isMobile ? [5, 4, 0] : isTablet ? [10, 4, 0] : [-13, 4, 0],
   };
 };
 
@@ -350,58 +317,3 @@ export const workExperiences = [
     animation: 'salute',
   },
 ];
-
-// export const experiences = [
-//   {
-//     title: "React.js Developer",
-//     company_name: "Starbucks",
-//     icon: starbucks,
-//     iconBg: "#383E56",
-//     date: "March 2020 - April 2021",
-//     points: [
-//       "Developing and maintaining web applications using React.js and other related technologies.",
-//       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-//       "Implementing responsive design and ensuring cross-browser compatibility.",
-//       "Participating in code reviews and providing constructive feedback to other developers.",
-//     ],
-//   },
-//   {
-//     title: "React Native Developer",
-//     company_name: "Tesla",
-//     icon: tesla,
-//     iconBg: "#E6DEDD",
-//     date: "Jan 2021 - Feb 2022",
-//     points: [
-//       "Developing and maintaining web applications using React.js and other related technologies.",
-//       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-//       "Implementing responsive design and ensuring cross-browser compatibility.",
-//       "Participating in code reviews and providing constructive feedback to other developers.",
-//     ],
-//   },
-//   {
-//     title: "Web Developer",
-//     company_name: "Shopify",
-//     icon: shopify,
-//     iconBg: "#383E56",
-//     date: "Jan 2022 - Jan 2023",
-//     points: [
-//       "Developing and maintaining web applications using React.js and other related technologies.",
-//       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-//       "Implementing responsive design and ensuring cross-browser compatibility.",
-//       "Participating in code reviews and providing constructive feedback to other developers.",
-//     ],
-//   },
-//   {
-//     title: "Full stack Developer",
-//     company_name: "Meta",
-//     icon: meta,
-//     iconBg: "#E6DEDD",
-//     date: "Jan 2023 - Present",
-//     points: [
-//       "Developing and maintaining web applications using React.js and other related technologies.",
-//       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-//       "Implementing responsive design and ensuring cross-browser compatibility.",
-//       "Participating in code reviews and providing constructive feedback to other developers.",
-//     ],
-//   },
-// ];

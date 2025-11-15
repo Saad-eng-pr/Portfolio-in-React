@@ -15,6 +15,8 @@ import JavascriptLogo from "../components/JavascriptLogo";
 import HeroCamera from "../components/HeroCamera";
 import RubiksCube from "../components/RubiksCube";
 import Pyraminx from "../components/Pyraminx";
+import SkewCube from "../components/SkewCube";
+import SkewedCube from "../components/SkewedCube";
 
 const Hero = () => {
   const isSmall = useMediaQuery({ maxWidth: 440 });
@@ -75,6 +77,8 @@ const Hero = () => {
               <JavascriptLogo position={sizes.javascriptPosition} />
               <RubiksCube position={sizes.rubiksCubePosition} />
               <Pyraminx position={sizes.pyraminxPosition} />
+              <SkewCube position={sizes.skewCubePosition} />
+              <SkewedCube position={sizes.skewedCubePosition} />
             </group>
 
             <ambientLight intensity={1} />
