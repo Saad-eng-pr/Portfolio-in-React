@@ -6,9 +6,11 @@ Source: https://sketchfab.com/3d-models/rubiks-cube-4cc7c1bf585f4b929ddd32f6cab3
 Title: RUBIK'S CUBE
 */
 
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import { useGLTF, useAnimations } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
 
 const RubiksCube = (props) => {
   const group = useRef()
@@ -24,7 +26,7 @@ const RubiksCube = (props) => {
 
   return (
     <group ref={group} {...props} dispose={null} scale={0.004}>
-      <group name="Sketchfab_Scene">
+      <group name="Sketchfab_Scene" onPointerEnter={() => setHovered(true)} >
         <group
           name="Sketchfab_model"
           position={[0, -0.002, 0]}
@@ -36,8 +38,6 @@ const RubiksCube = (props) => {
                 <group name="Cube001" rotation={[-Math.PI / 2, 0, 0]} scale={100}>
                   <mesh
                     name="Cube001_Cube_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube001_Cube_0.geometry}
                     material={materials.Cube}
                   />
@@ -49,8 +49,6 @@ const RubiksCube = (props) => {
                   scale={100}>
                   <mesh
                     name="Cube000_Cube_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube000_Cube_0.geometry}
                     material={materials.Cube}
                   />
@@ -58,8 +56,6 @@ const RubiksCube = (props) => {
                 <group name="Cube086" rotation={[Math.PI, 0, Math.PI]} scale={100}>
                   <mesh
                     name="Cube086_Yellow_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube086_Yellow_0.geometry}
                     material={materials.Yellow}
                   />
@@ -67,8 +63,6 @@ const RubiksCube = (props) => {
                 <group name="Cube085" rotation={[Math.PI, 0, Math.PI]} scale={100}>
                   <mesh
                     name="Cube085_Yellow_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube085_Yellow_0.geometry}
                     material={materials.Yellow}
                   />
@@ -76,8 +70,6 @@ const RubiksCube = (props) => {
                 <group name="Cube084" rotation={[-Math.PI, 0, -Math.PI / 2]} scale={100}>
                   <mesh
                     name="Cube084_Yellow_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube084_Yellow_0.geometry}
                     material={materials.Yellow}
                   />
@@ -85,8 +77,6 @@ const RubiksCube = (props) => {
                 <group name="Cube083" rotation={[Math.PI, 0, Math.PI]} scale={100}>
                   <mesh
                     name="Cube083_Yellow_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube083_Yellow_0.geometry}
                     material={materials.Yellow}
                   />
@@ -94,8 +84,6 @@ const RubiksCube = (props) => {
                 <group name="Cube082" rotation={[0, -1.571, 0]} scale={100}>
                   <mesh
                     name="Cube082_Yellow_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube082_Yellow_0.geometry}
                     material={materials.Yellow}
                   />
@@ -103,8 +91,6 @@ const RubiksCube = (props) => {
                 <group name="Cube081" rotation={[Math.PI, 0, Math.PI]} scale={100}>
                   <mesh
                     name="Cube081_Yellow_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube081_Yellow_0.geometry}
                     material={materials.Yellow}
                   />
@@ -112,8 +98,6 @@ const RubiksCube = (props) => {
                 <group name="Cube080" rotation={[Math.PI, 0, Math.PI]} scale={100}>
                   <mesh
                     name="Cube080_Yellow_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube080_Yellow_0.geometry}
                     material={materials.Yellow}
                   />
@@ -121,8 +105,6 @@ const RubiksCube = (props) => {
                 <group name="Cube079" rotation={[-Math.PI, 0, -Math.PI / 2]} scale={100}>
                   <mesh
                     name="Cube079_Yellow_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube079_Yellow_0.geometry}
                     material={materials.Yellow}
                   />
@@ -130,8 +112,6 @@ const RubiksCube = (props) => {
                 <group name="Cube078" rotation={[Math.PI, 0, Math.PI]} scale={100}>
                   <mesh
                     name="Cube078_Yellow_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube078_Yellow_0.geometry}
                     material={materials.Yellow}
                   />
@@ -139,8 +119,6 @@ const RubiksCube = (props) => {
                 <group name="Cube077" scale={100}>
                   <mesh
                     name="Cube077_White_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube077_White_0.geometry}
                     material={materials.White}
                   />
@@ -148,8 +126,6 @@ const RubiksCube = (props) => {
                 <group name="Cube076" rotation={[0, 0, Math.PI / 2]} scale={100}>
                   <mesh
                     name="Cube076_White_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube076_White_0.geometry}
                     material={materials.White}
                   />
@@ -157,8 +133,6 @@ const RubiksCube = (props) => {
                 <group name="Cube075" scale={100}>
                   <mesh
                     name="Cube075_White_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube075_White_0.geometry}
                     material={materials.White}
                   />
@@ -166,8 +140,6 @@ const RubiksCube = (props) => {
                 <group name="Cube074" scale={100}>
                   <mesh
                     name="Cube074_White_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube074_White_0.geometry}
                     material={materials.White}
                   />
@@ -175,8 +147,6 @@ const RubiksCube = (props) => {
                 <group name="Cube073" rotation={[0, 1.571, 0]} scale={100}>
                   <mesh
                     name="Cube073_White_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube073_White_0.geometry}
                     material={materials.White}
                   />
@@ -184,8 +154,6 @@ const RubiksCube = (props) => {
                 <group name="Cube072" scale={100}>
                   <mesh
                     name="Cube072_White_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube072_White_0.geometry}
                     material={materials.White}
                   />
@@ -193,8 +161,6 @@ const RubiksCube = (props) => {
                 <group name="Cube071" rotation={[0, 0, Math.PI / 2]} scale={100}>
                   <mesh
                     name="Cube071_White_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube071_White_0.geometry}
                     material={materials.White}
                   />
@@ -202,8 +168,6 @@ const RubiksCube = (props) => {
                 <group name="Cube070" scale={100}>
                   <mesh
                     name="Cube070_White_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube070_White_0.geometry}
                     material={materials.White}
                   />
@@ -211,8 +175,6 @@ const RubiksCube = (props) => {
                 <group name="Cube069" scale={100}>
                   <mesh
                     name="Cube069_White_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube069_White_0.geometry}
                     material={materials.White}
                   />
@@ -220,8 +182,6 @@ const RubiksCube = (props) => {
                 <group name="Cube068" rotation={[-Math.PI / 2, 0, 0]} scale={100}>
                   <mesh
                     name="Cube068_Blue_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube068_Blue_0.geometry}
                     material={materials.Blue}
                   />
@@ -229,8 +189,6 @@ const RubiksCube = (props) => {
                 <group name="Cube067" rotation={[-Math.PI / 2, 0, 0]} scale={100}>
                   <mesh
                     name="Cube067_Blue_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube067_Blue_0.geometry}
                     material={materials.Blue}
                   />
@@ -238,8 +196,6 @@ const RubiksCube = (props) => {
                 <group name="Cube066" rotation={[-Math.PI / 2, 0, Math.PI / 2]} scale={100}>
                   <mesh
                     name="Cube066_Blue_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube066_Blue_0.geometry}
                     material={materials.Blue}
                   />
@@ -247,8 +203,6 @@ const RubiksCube = (props) => {
                 <group name="Cube065" rotation={[-Math.PI / 2, 0, 0]} scale={100}>
                   <mesh
                     name="Cube065_Blue_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube065_Blue_0.geometry}
                     material={materials.Blue}
                   />
@@ -256,8 +210,6 @@ const RubiksCube = (props) => {
                 <group name="Cube064" rotation={[-Math.PI / 2, Math.PI / 2, 0]} scale={100}>
                   <mesh
                     name="Cube064_Blue_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube064_Blue_0.geometry}
                     material={materials.Blue}
                   />
@@ -265,8 +217,6 @@ const RubiksCube = (props) => {
                 <group name="Cube063" rotation={[-Math.PI / 2, 0, 0]} scale={100}>
                   <mesh
                     name="Cube063_Blue_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube063_Blue_0.geometry}
                     material={materials.Blue}
                   />
@@ -274,8 +224,6 @@ const RubiksCube = (props) => {
                 <group name="Cube062" rotation={[-Math.PI / 2, 0, 0]} scale={100}>
                   <mesh
                     name="Cube062_Blue_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube062_Blue_0.geometry}
                     material={materials.Blue}
                   />
@@ -283,8 +231,6 @@ const RubiksCube = (props) => {
                 <group name="Cube061" rotation={[-Math.PI / 2, 0, Math.PI / 2]} scale={100}>
                   <mesh
                     name="Cube061_Blue_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube061_Blue_0.geometry}
                     material={materials.Blue}
                   />
@@ -292,8 +238,6 @@ const RubiksCube = (props) => {
                 <group name="Cube059" rotation={[-Math.PI / 2, 0, 0]} scale={100}>
                   <mesh
                     name="Cube059_Blue_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube059_Blue_0.geometry}
                     material={materials.Blue}
                   />
@@ -301,8 +245,6 @@ const RubiksCube = (props) => {
                 <group name="Cube058" rotation={[-Math.PI / 2, -Math.PI / 2, 0]} scale={100}>
                   <mesh
                     name="Cube058_Orange_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube058_Orange_0.geometry}
                     material={materials.Orange}
                   />
@@ -310,8 +252,6 @@ const RubiksCube = (props) => {
                 <group name="Cube057" rotation={[-Math.PI, -1.571, 0]} scale={100}>
                   <mesh
                     name="Cube057_Orange_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube057_Orange_0.geometry}
                     material={materials.Orange}
                   />
@@ -319,8 +259,6 @@ const RubiksCube = (props) => {
                 <group name="Cube056" rotation={[-Math.PI / 2, -Math.PI / 2, 0]} scale={100}>
                   <mesh
                     name="Cube056_Orange_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube056_Orange_0.geometry}
                     material={materials.Orange}
                   />
@@ -328,8 +266,6 @@ const RubiksCube = (props) => {
                 <group name="Cube055" rotation={[-Math.PI / 2, -Math.PI / 2, 0]} scale={100}>
                   <mesh
                     name="Cube055_Orange_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube055_Orange_0.geometry}
                     material={materials.Orange}
                   />
@@ -337,8 +273,6 @@ const RubiksCube = (props) => {
                 <group name="Cube054" rotation={[Math.PI, 0, 0]} scale={100}>
                   <mesh
                     name="Cube054_Orange_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube054_Orange_0.geometry}
                     material={materials.Orange}
                   />
@@ -346,8 +280,6 @@ const RubiksCube = (props) => {
                 <group name="Cube053" rotation={[-Math.PI / 2, -Math.PI / 2, 0]} scale={100}>
                   <mesh
                     name="Cube053_Orange_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube053_Orange_0.geometry}
                     material={materials.Orange}
                   />
@@ -355,8 +287,6 @@ const RubiksCube = (props) => {
                 <group name="Cube052" rotation={[-Math.PI, -1.571, 0]} scale={100}>
                   <mesh
                     name="Cube052_Orange_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube052_Orange_0.geometry}
                     material={materials.Orange}
                   />
@@ -364,8 +294,6 @@ const RubiksCube = (props) => {
                 <group name="Cube051" rotation={[-Math.PI / 2, -Math.PI / 2, 0]} scale={100}>
                   <mesh
                     name="Cube051_Orange_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube051_Orange_0.geometry}
                     material={materials.Orange}
                   />
@@ -373,8 +301,6 @@ const RubiksCube = (props) => {
                 <group name="Cube050" rotation={[-Math.PI / 2, -Math.PI / 2, 0]} scale={100}>
                   <mesh
                     name="Cube050_Orange_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube050_Orange_0.geometry}
                     material={materials.Orange}
                   />
@@ -382,8 +308,6 @@ const RubiksCube = (props) => {
                 <group name="Cube049" rotation={[Math.PI / 2, 0, Math.PI]} scale={100}>
                   <mesh
                     name="Cube049_Green_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube049_Green_0.geometry}
                     material={materials.Green}
                   />
@@ -391,8 +315,6 @@ const RubiksCube = (props) => {
                 <group name="Cube048" rotation={[Math.PI / 2, 0, Math.PI]} scale={100}>
                   <mesh
                     name="Cube048_Green_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube048_Green_0.geometry}
                     material={materials.Green}
                   />
@@ -400,8 +322,6 @@ const RubiksCube = (props) => {
                 <group name="Cube047" rotation={[Math.PI / 2, 0, -Math.PI / 2]} scale={100}>
                   <mesh
                     name="Cube047_Green_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube047_Green_0.geometry}
                     material={materials.Green}
                   />
@@ -409,8 +329,6 @@ const RubiksCube = (props) => {
                 <group name="Cube046" rotation={[Math.PI / 2, 0, Math.PI]} scale={100}>
                   <mesh
                     name="Cube046_Green_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube046_Green_0.geometry}
                     material={materials.Green}
                   />
@@ -418,8 +336,6 @@ const RubiksCube = (props) => {
                 <group name="Cube045" rotation={[-Math.PI / 2, -Math.PI / 2, 0]} scale={100}>
                   <mesh
                     name="Cube045_Green_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube045_Green_0.geometry}
                     material={materials.Green}
                   />
@@ -427,8 +343,6 @@ const RubiksCube = (props) => {
                 <group name="Cube044" rotation={[Math.PI / 2, 0, Math.PI]} scale={100}>
                   <mesh
                     name="Cube044_Green_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube044_Green_0.geometry}
                     material={materials.Green}
                   />
@@ -436,8 +350,6 @@ const RubiksCube = (props) => {
                 <group name="Cube043" rotation={[Math.PI / 2, 0, Math.PI]} scale={100}>
                   <mesh
                     name="Cube043_Green_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube043_Green_0.geometry}
                     material={materials.Green}
                   />
@@ -445,8 +357,6 @@ const RubiksCube = (props) => {
                 <group name="Cube042" rotation={[Math.PI / 2, 0, -Math.PI / 2]} scale={100}>
                   <mesh
                     name="Cube042_Green_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube042_Green_0.geometry}
                     material={materials.Green}
                   />
@@ -454,8 +364,6 @@ const RubiksCube = (props) => {
                 <group name="Cube039" rotation={[Math.PI / 2, 0, Math.PI]} scale={100}>
                   <mesh
                     name="Cube039_Green_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube039_Green_0.geometry}
                     material={materials.Green}
                   />
@@ -463,8 +371,6 @@ const RubiksCube = (props) => {
                 <group name="Cube034" rotation={[-Math.PI / 2, Math.PI / 2, 0]} scale={100}>
                   <mesh
                     name="Cube034_Red_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube034_Red_0.geometry}
                     material={materials.material}
                   />
@@ -472,8 +378,6 @@ const RubiksCube = (props) => {
                 <group name="Cube040" rotation={[0, 1.571, 0]} scale={100}>
                   <mesh
                     name="Cube040_Red_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube040_Red_0.geometry}
                     material={materials.material}
                   />
@@ -481,8 +385,6 @@ const RubiksCube = (props) => {
                 <group name="Cube036" rotation={[-Math.PI / 2, Math.PI / 2, 0]} scale={100}>
                   <mesh
                     name="Cube036_Red_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube036_Red_0.geometry}
                     material={materials.material}
                   />
@@ -490,8 +392,6 @@ const RubiksCube = (props) => {
                 <group name="Cube041" rotation={[-Math.PI / 2, Math.PI / 2, 0]} scale={100}>
                   <mesh
                     name="Cube041_Red_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube041_Red_0.geometry}
                     material={materials.material}
                   />
@@ -499,8 +399,6 @@ const RubiksCube = (props) => {
                 <group name="Cube038" rotation={[Math.PI / 2, 0, Math.PI]} scale={100}>
                   <mesh
                     name="Cube038_Red_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube038_Red_0.geometry}
                     material={materials.material}
                   />
@@ -508,8 +406,6 @@ const RubiksCube = (props) => {
                 <group name="Cube033" rotation={[-Math.PI / 2, Math.PI / 2, 0]} scale={100}>
                   <mesh
                     name="Cube033_Red_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube033_Red_0.geometry}
                     material={materials.material}
                   />
@@ -517,8 +413,6 @@ const RubiksCube = (props) => {
                 <group name="Cube037" rotation={[0, 1.571, 0]} scale={100}>
                   <mesh
                     name="Cube037_Red_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube037_Red_0.geometry}
                     material={materials.material}
                   />
@@ -526,8 +420,6 @@ const RubiksCube = (props) => {
                 <group name="Cube035" rotation={[-Math.PI / 2, Math.PI / 2, 0]} scale={100}>
                   <mesh
                     name="Cube035_Red_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube035_Red_0.geometry}
                     material={materials.material}
                   />
@@ -535,8 +427,6 @@ const RubiksCube = (props) => {
                 <group name="Cube060" rotation={[-Math.PI / 2, Math.PI / 2, 0]} scale={100}>
                   <mesh
                     name="Cube060_Red_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube060_Red_0.geometry}
                     material={materials.material}
                   />
@@ -544,8 +434,6 @@ const RubiksCube = (props) => {
                 <group name="Cube032" rotation={[-Math.PI / 2, 0, Math.PI / 2]} scale={100}>
                   <mesh
                     name="Cube032_Cube_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube032_Cube_0.geometry}
                     material={materials.Cube}
                   />
@@ -553,8 +441,6 @@ const RubiksCube = (props) => {
                 <group name="Cube031" rotation={[-Math.PI / 2, 0, Math.PI / 2]} scale={100}>
                   <mesh
                     name="Cube031_Cube_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube031_Cube_0.geometry}
                     material={materials.Cube}
                   />
@@ -562,8 +448,6 @@ const RubiksCube = (props) => {
                 <group name="Cube030" rotation={[-Math.PI / 2, 0, Math.PI / 2]} scale={100}>
                   <mesh
                     name="Cube030_Cube_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube030_Cube_0.geometry}
                     material={materials.Cube}
                   />
@@ -571,8 +455,6 @@ const RubiksCube = (props) => {
                 <group name="Cube029" rotation={[-Math.PI / 2, 0, 0]} scale={100}>
                   <mesh
                     name="Cube029_Cube_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube029_Cube_0.geometry}
                     material={materials.Cube}
                   />
@@ -580,8 +462,6 @@ const RubiksCube = (props) => {
                 <group name="Cube027" rotation={[-Math.PI / 2, 0, 0]} scale={100}>
                   <mesh
                     name="Cube027_Cube_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube027_Cube_0.geometry}
                     material={materials.Cube}
                   />
@@ -589,8 +469,6 @@ const RubiksCube = (props) => {
                 <group name="Cube026" rotation={[-Math.PI / 2, 0, 0]} scale={100}>
                   <mesh
                     name="Cube026_Cube_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube026_Cube_0.geometry}
                     material={materials.Cube}
                   />
@@ -598,8 +476,6 @@ const RubiksCube = (props) => {
                 <group name="Cube025" rotation={[-Math.PI / 2, Math.PI / 2, 0]} scale={100}>
                   <mesh
                     name="Cube025_Cube_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube025_Cube_0.geometry}
                     material={materials.Cube}
                   />
@@ -607,8 +483,6 @@ const RubiksCube = (props) => {
                 <group name="Cube024" rotation={[0, 1.571, 0]} scale={100}>
                   <mesh
                     name="Cube024_Cube_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube024_Cube_0.geometry}
                     material={materials.Cube}
                   />
@@ -616,8 +490,6 @@ const RubiksCube = (props) => {
                 <group name="Cube023" rotation={[0, 1.571, 0]} scale={100}>
                   <mesh
                     name="Cube023_Cube_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube023_Cube_0.geometry}
                     material={materials.Cube}
                   />
@@ -625,8 +497,6 @@ const RubiksCube = (props) => {
                 <group name="Cube022" rotation={[0, 1.571, 0]} scale={100}>
                   <mesh
                     name="Cube022_Cube_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube022_Cube_0.geometry}
                     material={materials.Cube}
                   />
@@ -634,8 +504,6 @@ const RubiksCube = (props) => {
                 <group name="Cube021" rotation={[0, 1.571, 0]} scale={100}>
                   <mesh
                     name="Cube021_Cube_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube021_Cube_0.geometry}
                     material={materials.Cube}
                   />
@@ -643,8 +511,6 @@ const RubiksCube = (props) => {
                 <group name="Cube020" rotation={[-Math.PI / 2, 0, 0]} scale={100}>
                   <mesh
                     name="Cube020_Cube_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube020_Cube_0.geometry}
                     material={materials.Cube}
                   />
@@ -652,8 +518,6 @@ const RubiksCube = (props) => {
                 <group name="Cube019" rotation={[-Math.PI / 2, 0, 0]} scale={100}>
                   <mesh
                     name="Cube019_Cube_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube019_Cube_0.geometry}
                     material={materials.Cube}
                   />
@@ -661,8 +525,6 @@ const RubiksCube = (props) => {
                 <group name="Cube018" rotation={[-Math.PI / 2, 0, 0]} scale={100}>
                   <mesh
                     name="Cube018_Cube_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube018_Cube_0.geometry}
                     material={materials.Cube}
                   />
@@ -670,8 +532,6 @@ const RubiksCube = (props) => {
                 <group name="Cube017" rotation={[-Math.PI / 2, 0, 0]} scale={100}>
                   <mesh
                     name="Cube017_Cube_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube017_Cube_0.geometry}
                     material={materials.Cube}
                   />
@@ -679,8 +539,6 @@ const RubiksCube = (props) => {
                 <group name="Cube016" rotation={[-Math.PI / 2, 0, 0]} scale={100}>
                   <mesh
                     name="Cube016_Cube_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube016_Cube_0.geometry}
                     material={materials.Cube}
                   />
@@ -688,8 +546,6 @@ const RubiksCube = (props) => {
                 <group name="Cube015" rotation={[-Math.PI / 2, 0, 0]} scale={100}>
                   <mesh
                     name="Cube015_Cube_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube015_Cube_0.geometry}
                     material={materials.Cube}
                   />
@@ -697,8 +553,6 @@ const RubiksCube = (props) => {
                 <group name="Cube014" rotation={[-Math.PI / 2, 0, 0]} scale={100}>
                   <mesh
                     name="Cube014_Cube_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube014_Cube_0.geometry}
                     material={materials.Cube}
                   />
@@ -706,8 +560,6 @@ const RubiksCube = (props) => {
                 <group name="Cube012" rotation={[-Math.PI / 2, 0, 0]} scale={100}>
                   <mesh
                     name="Cube012_Cube_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube012_Cube_0.geometry}
                     material={materials.Cube}
                   />
@@ -715,8 +567,6 @@ const RubiksCube = (props) => {
                 <group name="Cube011" rotation={[-Math.PI / 2, 0, Math.PI / 2]} scale={100}>
                   <mesh
                     name="Cube011_Cube_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube011_Cube_0.geometry}
                     material={materials.Cube}
                   />
@@ -724,8 +574,6 @@ const RubiksCube = (props) => {
                 <group name="Cube010" rotation={[0, 1.571, 0]} scale={100}>
                   <mesh
                     name="Cube010_Cube_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube010_Cube_0.geometry}
                     material={materials.Cube}
                   />
@@ -733,8 +581,6 @@ const RubiksCube = (props) => {
                 <group name="Cube009" rotation={[Math.PI, 0, 0]} scale={100}>
                   <mesh
                     name="Cube009_Cube_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube009_Cube_0.geometry}
                     material={materials.Cube}
                   />
@@ -742,8 +588,6 @@ const RubiksCube = (props) => {
                 <group name="Cube008" rotation={[-Math.PI / 2, Math.PI / 2, 0]} scale={100}>
                   <mesh
                     name="Cube008_Cube_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube008_Cube_0.geometry}
                     material={materials.Cube}
                   />
@@ -751,8 +595,6 @@ const RubiksCube = (props) => {
                 <group name="Cube007" rotation={[0, 1.571, 0]} scale={100}>
                   <mesh
                     name="Cube007_Cube_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.Cube007_Cube_0.geometry}
                     material={materials.Cube}
                   />

@@ -34,8 +34,6 @@ const DemoScreen = (props) => {
       <group name="Scene">
         <mesh
           name="monitor-screen"
-          castShadow
-          receiveShadow
           geometry={nodes['monitor-screen'].geometry}
           material={nodes['monitor-screen'].material}
           position={[0.127, 1.831, 0.511]}

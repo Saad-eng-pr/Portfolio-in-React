@@ -30,8 +30,6 @@ const AngularLogo = (props) => {
                   scale={190.107}>
                   <mesh
                     name="logo_Material001_0"
-                    castShadow
-                    receiveShadow
                     geometry={nodes.logo_Material001_0.geometry}
                     material={materials['Material.001']}
                   > 

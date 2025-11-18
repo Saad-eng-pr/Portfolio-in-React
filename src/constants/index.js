@@ -285,35 +285,42 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
     pyraminxPosition: isSmall ? [4, -5, 0] : isMobile ? [5, -5, 0] : isTablet ? [5, -5, 0] : [-13, -8, 0],
     skewCubePosition: isSmall ? [3, 2, 0] : isMobile ? [5, 4, 0] : isTablet ? [10, 4, 0] : [13, 4, 0],
     skewedCubePosition: isSmall ? [3, 2, 0] : isMobile ? [5, 4, 0] : isTablet ? [10, 4, 0] : [-13, 4, 0],
+    pawnChessPosition: isSmall ? [0, -2, 0] : isMobile ? [1, -3.2, 0] : isTablet ? [2, -3.5, 0] : [15, -5, 0],
+    queenChessPosition: isSmall ? [-1.5, -3.2, 0] : isMobile ? [-2.5, -4, 0] : isTablet ? [-4, -4.3, 0] : [-9, 1.5, 0],
+    knightChessPosition: isSmall ? [1.5, -3.2, 0] : isMobile ? [2.5, -4, 0] : isTablet ? [4, -4.3, 0] : [8, 2, 0],
+    rookChessPosition: isSmall ? [-1, -6, 0] : isMobile ? [-2, -7, 0] : isTablet ? [-3.5, -7.2, 0] : [-22, -12, 0],
   };
 };
+
+
+
 
 export const workExperiences = [
   {
     id: 1,
-    name: 'Framer',
-    pos: 'Lead Web Developer',
-    duration: '2022 - Present',
-    title: "Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
-    icon: '/assets/framer.svg',
-    animation: 'victory',
+    name: 'McSport® - Fanzone',
+    pos: ' Stage Développeur Web & Assistant Chef de Projet',
+    location: 'Île-de-France',
+    duration: 'Avril - Aout 2025 (5mois)',
+    title: "Durant mon stage chez McSport, j'ai travaillé comme Développeur Web et Assistant Chef de Projet. J'ai développé des POC en React pour valider des choix techniques, contribué à la conception UX/UI sur Figma, et rédigé la documentation associée. J'ai également assisté le chef de projet dans le suivi des tâches, la coordination, ainsi que dans la rédaction du cahier des charges, ce qui m'a permis de développer mes compétences en développement web et en gestion de projet.",
+    icon: '/assets/mcsport.png'
   },
   {
     id: 2,
-    name: 'Figma',
-    pos: 'Web Developer',
-    duration: '2020 - 2022',
-    title: "Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
-    icon: '/assets/figma.svg',
-    animation: 'clapping',
+    name: 'Service Université Handicap - UCA (SUH)',
+    pos: 'Tuteur académique',
+    location: 'Clermont-Ferrand',
+    duration: 'Octobre 2025 - Présent',
+    title: "Tutorat d'un étudiant à l'ISIMA pour soutenir sa réussite académique, avec des séances dédiées à l'explication du cours et à la correction des exercices et examens, tout en adaptant l'accompagnement à ses besoins.",
+    icon: '/assets/uca1.png',
   },
   {
     id: 3,
-    name: 'Notion',
-    pos: 'Junior Web Developer',
-    duration: '2019 - 2020',
-    title: "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
-    icon: '/assets/notion.svg',
-    animation: 'salute',
+    name: 'RGIS',
+    pos: 'Inventoriste / Auditeur en inventaire',
+    location: 'Clermont-Ferrand',
+    duration: 'Aout 2024 - Octobre 2024',
+    title: "Réalisation d'inventaires pour vérifier et enregistrer les stocks, en assurant la précision des données et le respect des procédures.",
+    icon: '/assets/rgis-web-logo.svg',
   },
 ];

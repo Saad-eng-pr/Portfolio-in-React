@@ -31,15 +31,11 @@ const SkewedCube = (props) => {
               <group name="321">
                 <mesh
                   name="321_0"
-                  castShadow
-                  receiveShadow
                   geometry={nodes['321_0'].geometry}
                   material={materials.Bevel}
                 />
                 <mesh
                   name="321_1"
-                  castShadow
-                  receiveShadow
                   geometry={nodes['321_1'].geometry}
                   material={materials.Green}
                 />
@@ -47,29 +43,24 @@ const SkewedCube = (props) => {
               <group name="311">
                 <mesh
                   name="311_0"
-                  castShadow
-                  receiveShadow
                   geometry={nodes['311_0'].geometry}
                   material={materials.Bevel}
                 />
                 <mesh
                   name="311_1"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['311_1'].geometry}
                   material={materials.Green}
                 />
                 <mesh
                   name="311_2"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['311_2'].geometry}
                   material={materials.White}
                 />
                 <mesh
                   name="311_3"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['311_3'].geometry}
                   material={materials.Orange}
                 />
@@ -77,22 +68,19 @@ const SkewedCube = (props) => {
               <group name="231">
                 <mesh
                   name="231_0"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['231_0'].geometry}
                   material={materials.Bevel}
                 />
                 <mesh
                   name="231_1"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['231_1'].geometry}
                   material={materials.material}
                 />
                 <mesh
                   name="231_2"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['231_2'].geometry}
                   material={materials.Green}
                 />
@@ -100,22 +88,19 @@ const SkewedCube = (props) => {
               <group name="221">
                 <mesh
                   name="221_0"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['221_0'].geometry}
                   material={materials.Bevel}
                 />
                 <mesh
                   name="221_1"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['221_1'].geometry}
                   material={materials.Green}
                 />
                 <mesh
                   name="221_2"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['221_2'].geometry}
                   material={materials.White}
                 />
@@ -123,15 +108,13 @@ const SkewedCube = (props) => {
               <group name="211">
                 <mesh
                   name="211_0"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['211_0'].geometry}
                   material={materials.Bevel}
                 />
                 <mesh
                   name="211_1"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['211_1'].geometry}
                   material={materials.White}
                 />
@@ -139,22 +122,19 @@ const SkewedCube = (props) => {
               <group name="232">
                 <mesh
                   name="232_0"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['232_0'].geometry}
                   material={materials.Bevel}
                 />
                 <mesh
                   name="232_1"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['232_1'].geometry}
                   material={materials.material}
                 />
                 <mesh
                   name="232_2"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['232_2'].geometry}
                   material={materials.Yellow}
                 />
@@ -162,8 +142,7 @@ const SkewedCube = (props) => {
               <group name="222">
                 <mesh
                   name="222_0"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['222_0'].geometry}
                   material={materials.Bevel}
                 />
@@ -171,22 +150,19 @@ const SkewedCube = (props) => {
               <group name="223">
                 <mesh
                   name="223_0"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['223_0'].geometry}
                   material={materials.Bevel}
                 />
                 <mesh
                   name="223_1"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['223_1'].geometry}
                   material={materials.Yellow}
                 />
                 <mesh
                   name="223_2"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['223_2'].geometry}
                   material={materials.Blue}
                 />
@@ -194,15 +170,13 @@ const SkewedCube = (props) => {
               <group name="233">
                 <mesh
                   name="233_0"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['233_0'].geometry}
                   material={materials.Bevel}
                 />
                 <mesh
                   name="233_1"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['233_1'].geometry}
                   material={materials.Yellow}
                 />
@@ -210,22 +184,19 @@ const SkewedCube = (props) => {
               <group name="213">
                 <mesh
                   name="213_0"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['213_0'].geometry}
                   material={materials.Bevel}
                 />
                 <mesh
                   name="213_1"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['213_1'].geometry}
                   material={materials.Blue}
                 />
                 <mesh
                   name="213_2"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['213_2'].geometry}
                   material={materials.Orange}
                 />
@@ -233,15 +204,13 @@ const SkewedCube = (props) => {
               <group name="113">
                 <mesh
                   name="113_0"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['113_0'].geometry}
                   material={materials.Bevel}
                 />
                 <mesh
                   name="113_1"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['113_1'].geometry}
                   material={materials.Blue}
                 />
@@ -249,15 +218,13 @@ const SkewedCube = (props) => {
               <group name="132">
                 <mesh
                   name="132_0"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['132_0'].geometry}
                   material={materials.Bevel}
                 />
                 <mesh
                   name="132_1"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['132_1'].geometry}
                   material={materials.material}
                 />
@@ -265,15 +232,13 @@ const SkewedCube = (props) => {
               <group name="123">
                 <mesh
                   name="123_0"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['123_0'].geometry}
                   material={materials.Bevel}
                 />
                 <mesh
                   name="123_1"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['123_1'].geometry}
                   material={materials.Blue}
                 />
@@ -281,22 +246,19 @@ const SkewedCube = (props) => {
               <group name="112">
                 <mesh
                   name="112_0"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['112_0'].geometry}
                   material={materials.Bevel}
                 />
                 <mesh
                   name="112_1"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['112_1'].geometry}
                   material={materials.White}
                 />
                 <mesh
                   name="112_2"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['112_2'].geometry}
                   material={materials.Blue}
                 />
@@ -304,15 +266,13 @@ const SkewedCube = (props) => {
               <group name="111">
                 <mesh
                   name="111_0"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['111_0'].geometry}
                   material={materials.Bevel}
                 />
                 <mesh
                   name="111_1"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['111_1'].geometry}
                   material={materials.White}
                 />
@@ -320,15 +280,13 @@ const SkewedCube = (props) => {
               <group name="131">
                 <mesh
                   name="131_0"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['131_0'].geometry}
                   material={materials.Bevel}
                 />
                 <mesh
                   name="131_1"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['131_1'].geometry}
                   material={materials.material}
                 />
@@ -336,22 +294,19 @@ const SkewedCube = (props) => {
               <group name="122">
                 <mesh
                   name="122_0"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['122_0'].geometry}
                   material={materials.Bevel}
                 />
                 <mesh
                   name="122_1"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['122_1'].geometry}
                   material={materials.material}
                 />
                 <mesh
                   name="122_2"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['122_2'].geometry}
                   material={materials.Blue}
                 />
@@ -359,15 +314,13 @@ const SkewedCube = (props) => {
               <group name="313">
                 <mesh
                   name="313_0"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['313_0'].geometry}
                   material={materials.Bevel}
                 />
                 <mesh
                   name="313_1"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['313_1'].geometry}
                   material={materials.Orange}
                 />
@@ -375,22 +328,19 @@ const SkewedCube = (props) => {
               <group name="323">
                 <mesh
                   name="323_0"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['323_0'].geometry}
                   material={materials.Bevel}
                 />
                 <mesh
                   name="323_1"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['323_1'].geometry}
                   material={materials.Yellow}
                 />
                 <mesh
                   name="323_2"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['323_2'].geometry}
                   material={materials.Orange}
                 />
@@ -398,22 +348,19 @@ const SkewedCube = (props) => {
               <group name="322">
                 <mesh
                   name="322_0"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['322_0'].geometry}
                   material={materials.Bevel}
                 />
                 <mesh
                   name="322_1"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['322_1'].geometry}
                   material={materials.Green}
                 />
                 <mesh
                   name="322_2"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['322_2'].geometry}
                   material={materials.Orange}
                 />
@@ -421,29 +368,25 @@ const SkewedCube = (props) => {
               <group name="133">
                 <mesh
                   name="133_0"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['133_0'].geometry}
                   material={materials.Bevel}
                 />
                 <mesh
                   name="133_1"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['133_1'].geometry}
                   material={materials.material}
                 />
                 <mesh
                   name="133_2"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['133_2'].geometry}
                   material={materials.Yellow}
                 />
                 <mesh
                   name="133_3"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['133_3'].geometry}
                   material={materials.Blue}
                 />
@@ -451,22 +394,19 @@ const SkewedCube = (props) => {
               <group name="212">
                 <mesh
                   name="212_0"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['212_0'].geometry}
                   material={materials.Bevel}
                 />
                 <mesh
                   name="212_1"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['212_1'].geometry}
                   material={materials.White}
                 />
                 <mesh
                   name="212_2"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['212_2'].geometry}
                   material={materials.Orange}
                 />
@@ -474,15 +414,13 @@ const SkewedCube = (props) => {
               <group name="331">
                 <mesh
                   name="331_0"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['331_0'].geometry}
                   material={materials.Bevel}
                 />
                 <mesh
                   name="331_1"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['331_1'].geometry}
                   material={materials.Green}
                 />
@@ -490,15 +428,13 @@ const SkewedCube = (props) => {
               <group name="333">
                 <mesh
                   name="333_0"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['333_0'].geometry}
                   material={materials.Bevel}
                 />
                 <mesh
                   name="333_1"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['333_1'].geometry}
                   material={materials.Yellow}
                 />
@@ -506,22 +442,19 @@ const SkewedCube = (props) => {
               <group name="121">
                 <mesh
                   name="121_0"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['121_0'].geometry}
                   material={materials.Bevel}
                 />
                 <mesh
                   name="121_1"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['121_1'].geometry}
                   material={materials.material}
                 />
                 <mesh
                   name="121_2"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['121_2'].geometry}
                   material={materials.White}
                 />
@@ -529,15 +462,13 @@ const SkewedCube = (props) => {
               <group name="312">
                 <mesh
                   name="312_0"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['312_0'].geometry}
                   material={materials.Bevel}
                 />
                 <mesh
                   name="312_1"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['312_1'].geometry}
                   material={materials.Orange}
                 />
@@ -545,22 +476,19 @@ const SkewedCube = (props) => {
               <group name="332">
                 <mesh
                   name="332_0"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['332_0'].geometry}
                   material={materials.Bevel}
                 />
                 <mesh
                   name="332_1"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['332_1'].geometry}
                   material={materials.Green}
                 />
                 <mesh
                   name="332_2"
-                  castShadow
-                  receiveShadow
+                  
                   geometry={nodes['332_2'].geometry}
                   material={materials.Yellow}
                 />

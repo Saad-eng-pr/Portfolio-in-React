@@ -15,8 +15,6 @@ const CppLogo =(props) => {
     <Float floatIntensity={1.2}>
       <group {...props} dispose={null} scale={0.01}>
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes['C++_C++_0'].geometry}
           material={materials.material}
           position={[0, 0, 199.569]}

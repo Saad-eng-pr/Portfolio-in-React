@@ -28,272 +28,227 @@ const SkewCube = (props) => {
       <group scale={0.01}>
         <group rotation={[-Math.PI / 2, 0, 0]} scale={100}>
           <mesh
-            castShadow
-            receiveShadow
+            
             geometry={nodes['Skewb_Base_SL-W_0'].geometry}
             material={materials['Base_SL-W']}
           />
           <mesh
-            castShadow
-            receiveShadow
+            
             geometry={nodes['CenterPiece002_Base_SL-W_0'].geometry}
             material={materials['Base_SL-W']}
           />
           <mesh
-            castShadow
-            receiveShadow
+            
             geometry={nodes['CenterPiece002_Color_SL-W_0'].geometry}
             material={materials['Color_SL-W']}
           />
           <mesh
-            castShadow
-            receiveShadow
+            
             geometry={nodes['CornerPiece001_Base_SL-W_0'].geometry}
             material={materials['Base_SL-W']}
           />
           <mesh
-            castShadow
-            receiveShadow
+            
             geometry={nodes['CornerPiece001_Color_SL-R_0'].geometry}
             material={materials['Color_SL-R']}
           />
           <mesh
-            castShadow
-            receiveShadow
+            
             geometry={nodes['CornerPiece001_Color_SL-W_0'].geometry}
             material={materials['Color_SL-W']}
           />
           <mesh
-            castShadow
-            receiveShadow
+            
             geometry={nodes['CornerPiece001_Color_SL-G_0'].geometry}
             material={materials['Color_SL-G']}
           />
           <mesh
-            castShadow
-            receiveShadow
+            
             geometry={nodes['CenterPiece001_Base_SL-W_0'].geometry}
             material={materials['Base_SL-W']}
           />
           <mesh
-            castShadow
-            receiveShadow
+            
             geometry={nodes['CenterPiece001_Color_SL-Y_0'].geometry}
             material={materials['Color_SL-Y']}
           />
           <mesh
-            castShadow
-            receiveShadow
+            
             geometry={nodes['CenterPiece003_Base_SL-W_0'].geometry}
             material={materials['Base_SL-W']}
           />
           <mesh
-            castShadow
-            receiveShadow
+            
             geometry={nodes['CenterPiece003_Color_SL-G_0'].geometry}
             material={materials['Color_SL-G']}
           />
           <mesh
-            castShadow
-            receiveShadow
+            
             geometry={nodes['CenterPiece004_Base_SL-W_0'].geometry}
             material={materials['Base_SL-W']}
           />
           <mesh
-            castShadow
-            receiveShadow
+            
             geometry={nodes['CenterPiece004_Color_SL-B_0'].geometry}
             material={materials['Color_SL-B']}
           />
           <mesh
-            castShadow
-            receiveShadow
+            
             geometry={nodes['CenterPiece005_Base_SL-W_0'].geometry}
             material={materials['Base_SL-W']}
           />
           <mesh
-            castShadow
-            receiveShadow
+            
             geometry={nodes['CenterPiece005_Color_SL-R_0'].geometry}
             material={materials['Color_SL-R']}
           />
           <mesh
-            castShadow
-            receiveShadow
+            
             geometry={nodes['CenterPiece006_Base_SL-W_0'].geometry}
             material={materials['Base_SL-W']}
           />
           <mesh
-            castShadow
-            receiveShadow
+            
             geometry={nodes['CenterPiece006_Color_SL-O_0'].geometry}
             material={materials['Color_SL-O']}
           />
           <mesh
-            castShadow
-            receiveShadow
+            
             geometry={nodes['CornerPiece002_Color_SL-R_0'].geometry}
             material={materials['Color_SL-R']}
           />
           <mesh
-            castShadow
-            receiveShadow
+            
             geometry={nodes['CornerPiece002_Base_SL-W_0'].geometry}
             material={materials['Base_SL-W']}
           />
           <mesh
-            castShadow
-            receiveShadow
+            
             geometry={nodes['CornerPiece002_Color_SL-G_0'].geometry}
             material={materials['Color_SL-G']}
           />
           <mesh
-            castShadow
-            receiveShadow
+            
             geometry={nodes['CornerPiece002_Color_SL-Y_0'].geometry}
             material={materials['Color_SL-Y']}
           />
           <mesh
-            castShadow
-            receiveShadow
+            
             geometry={nodes['CornerPiece003_Color_SL-R_0'].geometry}
             material={materials['Color_SL-R']}
           />
           <mesh
-            castShadow
-            receiveShadow
+            
             geometry={nodes['CornerPiece003_Base_SL-W_0'].geometry}
             material={materials['Base_SL-W']}
           />
           <mesh
-            castShadow
-            receiveShadow
+            
             geometry={nodes['CornerPiece003_Color_SL-B_0'].geometry}
             material={materials['Color_SL-B']}
           />
           <mesh
-            castShadow
-            receiveShadow
+            
             geometry={nodes['CornerPiece003_Color_SL-W_0'].geometry}
             material={materials['Color_SL-W']}
           />
           <mesh
-            castShadow
-            receiveShadow
+            
             geometry={nodes['CornerPiece004_Color_SL-R_0'].geometry}
             material={materials['Color_SL-R']}
           />
           <mesh
-            castShadow
-            receiveShadow
+            
             geometry={nodes['CornerPiece004_Base_SL-W_0'].geometry}
             material={materials['Base_SL-W']}
           />
           <mesh
-            castShadow
-            receiveShadow
+            
             geometry={nodes['CornerPiece004_Color_SL-B_0'].geometry}
             material={materials['Color_SL-B']}
           />
           <mesh
-            castShadow
-            receiveShadow
+            
             geometry={nodes['CornerPiece004_Color_SL-Y_0'].geometry}
             material={materials['Color_SL-Y']}
           />
           <mesh
-            castShadow
-            receiveShadow
+            
             geometry={nodes['CornerPiece005_Color_SL-O_0'].geometry}
             material={materials['Color_SL-O']}
           />
           <mesh
-            castShadow
-            receiveShadow
+            
             geometry={nodes['CornerPiece005_Base_SL-W_0'].geometry}
             material={materials['Base_SL-W']}
           />
           <mesh
-            castShadow
-            receiveShadow
+            
             geometry={nodes['CornerPiece005_Color_SL-G_0'].geometry}
             material={materials['Color_SL-G']}
           />
           <mesh
-            castShadow
-            receiveShadow
+            
             geometry={nodes['CornerPiece005_Color_SL-W_0'].geometry}
             material={materials['Color_SL-W']}
           />
           <mesh
-            castShadow
-            receiveShadow
+            
             geometry={nodes['CornerPiece006_Color_SL-O_0'].geometry}
             material={materials['Color_SL-O']}
           />
           <mesh
-            castShadow
-            receiveShadow
+            
             geometry={nodes['CornerPiece006_Base_SL-W_0'].geometry}
             material={materials['Base_SL-W']}
           />
           <mesh
-            castShadow
-            receiveShadow
+            
             geometry={nodes['CornerPiece006_Color_SL-G_0'].geometry}
             material={materials['Color_SL-G']}
           />
           <mesh
-            castShadow
-            receiveShadow
+            
             geometry={nodes['CornerPiece006_Color_SL-Y_0'].geometry}
             material={materials['Color_SL-Y']}
           />
           <mesh
-            castShadow
-            receiveShadow
+            
             geometry={nodes['CornerPiece007_Color_SL-O_0'].geometry}
             material={materials['Color_SL-O']}
           />
           <mesh
-            castShadow
-            receiveShadow
+            
             geometry={nodes['CornerPiece007_Base_SL-W_0'].geometry}
             material={materials['Base_SL-W']}
           />
           <mesh
-            castShadow
-            receiveShadow
+            
             geometry={nodes['CornerPiece007_Color_SL-B_0'].geometry}
             material={materials['Color_SL-B']}
           />
           <mesh
-            castShadow
-            receiveShadow
+            
             geometry={nodes['CornerPiece007_Color_SL-W_0'].geometry}
             material={materials['Color_SL-W']}
           />
           <mesh
-            castShadow
-            receiveShadow
+            
             geometry={nodes['CornerPiece008_Color_SL-O_0'].geometry}
             material={materials['Color_SL-O']}
           />
           <mesh
-            castShadow
-            receiveShadow
+            
             geometry={nodes['CornerPiece008_Base_SL-W_0'].geometry}
             material={materials['Base_SL-W']}
           />
           <mesh
-            castShadow
-            receiveShadow
+            
             geometry={nodes['CornerPiece008_Color_SL-B_0'].geometry}
             material={materials['Color_SL-B']}
           />
           <mesh
-            castShadow
-            receiveShadow
+            
             geometry={nodes['CornerPiece008_Color_SL-Y_0'].geometry}
             material={materials['Color_SL-Y']}
           />

@@ -25,308 +25,206 @@ const Pyraminx = (props) => {
       <group scale={0.01}>
         <group rotation={[-Math.PI / 2, 0, 0]} scale={100}>
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes.Pyraminx_Base_0.geometry}
             material={materials.Base}
           />
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes.Piece001_Base_0.geometry}
             material={materials.Base}
           />
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes['Piece001_Sticker_Y-P_0'].geometry}
             material={materials['Sticker_Y-P']}
           />
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes['Piece001_Sticker_B-P_0'].geometry}
             material={materials['Sticker_B-P']}
           />
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes['Piece001_Sticker_G-P_0'].geometry}
             material={materials['Sticker_G-P']}
           />
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes.Piece002_Base_0.geometry}
             material={materials.Base}
           />
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes['Piece002_Sticker_R-P_0'].geometry}
             material={materials['Sticker_R-P']}
           />
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes['Piece002_Sticker_B-P_0'].geometry}
             material={materials['Sticker_B-P']}
           />
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes['Piece002_Sticker_G-P_0'].geometry}
             material={materials['Sticker_G-P']}
           />
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes.Piece003_Base_0.geometry}
             material={materials.Base}
           />
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes['Piece003_Sticker_R-P_0'].geometry}
             material={materials['Sticker_R-P']}
           />
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes['Piece003_Sticker_Y-P_0'].geometry}
             material={materials['Sticker_Y-P']}
           />
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes['Piece003_Sticker_G-P_0'].geometry}
             material={materials['Sticker_G-P']}
           />
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes.Piece004_Base_0.geometry}
             material={materials.Base}
           />
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes['Piece004_Sticker_Y-P_0'].geometry}
             material={materials['Sticker_Y-P']}
           />
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes['Piece004_Sticker_B-P_0'].geometry}
             material={materials['Sticker_B-P']}
           />
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes['Piece004_Sticker_R-P_0'].geometry}
             material={materials['Sticker_R-P']}
           />
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes.Piece005_Base_0.geometry}
             material={materials.Base}
           />
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes['Piece005_Sticker_Y-P_0'].geometry}
             material={materials['Sticker_Y-P']}
           />
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes['Piece005_Sticker_B-P_0'].geometry}
             material={materials['Sticker_B-P']}
           />
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes.Piece006_Base_0.geometry}
             material={materials.Base}
           />
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes['Piece006_Sticker_B-P_0'].geometry}
             material={materials['Sticker_B-P']}
           />
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes['Piece006_Sticker_R-P_0'].geometry}
             material={materials['Sticker_R-P']}
           />
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes['Piece006_Sticker_Y-P_0'].geometry}
             material={materials['Sticker_Y-P']}
           />
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes.Piece007_Base_0.geometry}
             material={materials.Base}
           />
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes['Piece007_Sticker_G-P_0'].geometry}
             material={materials['Sticker_G-P']}
           />
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes['Piece007_Sticker_R-P_0'].geometry}
             material={materials['Sticker_R-P']}
           />
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes['Piece007_Sticker_Y-P_0'].geometry}
             material={materials['Sticker_Y-P']}
           />
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes.Piece008_Base_0.geometry}
             material={materials.Base}
           />
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes['Piece008_Sticker_G-P_0'].geometry}
             material={materials['Sticker_G-P']}
           />
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes['Piece008_Sticker_Y-P_0'].geometry}
             material={materials['Sticker_Y-P']}
           />
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes.Piece009_Base_0.geometry}
             material={materials.Base}
           />
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes['Piece009_Sticker_B-P_0'].geometry}
             material={materials['Sticker_B-P']}
           />
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes['Piece009_Sticker_G-P_0'].geometry}
             material={materials['Sticker_G-P']}
           />
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes['Piece009_Sticker_Y-P_0'].geometry}
             material={materials['Sticker_Y-P']}
           />
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes.Piece010_Base_0.geometry}
             material={materials.Base}
           />
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes['Piece010_Sticker_R-P_0'].geometry}
             material={materials['Sticker_R-P']}
           />
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes['Piece010_Sticker_Y-P_0'].geometry}
             material={materials['Sticker_Y-P']}
           />
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes.Piece011_Base_0.geometry}
             material={materials.Base}
           />
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes['Piece011_Sticker_R-P_0'].geometry}
             material={materials['Sticker_R-P']}
           />
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes['Piece011_Sticker_G-P_0'].geometry}
             material={materials['Sticker_G-P']}
           />
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes['Piece011_Sticker_B-P_0'].geometry}
             material={materials['Sticker_B-P']}
           />
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes.Piece012_Base_0.geometry}
             material={materials.Base}
           />
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes['Piece012_Sticker_G-P_0'].geometry}
             material={materials['Sticker_G-P']}
           />
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes['Piece012_Sticker_B-P_0'].geometry}
             material={materials['Sticker_B-P']}
           />
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes.Piece013_Base_0.geometry}
             material={materials.Base}
           />
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes['Piece013_Sticker_R-P_0'].geometry}
             material={materials['Sticker_R-P']}
           />
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes['Piece013_Sticker_B-P_0'].geometry}
             material={materials['Sticker_B-P']}
           />
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes.Piece014_Base_0.geometry}
             material={materials.Base}
           />
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes['Piece014_Sticker_R-P_0'].geometry}
             material={materials['Sticker_R-P']}
           />
           <mesh
-            castShadow
-            receiveShadow
             geometry={nodes['Piece014_Sticker_G-P_0'].geometry}
             material={materials['Sticker_G-P']}
           />

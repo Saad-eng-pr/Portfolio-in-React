@@ -5,7 +5,6 @@ import DevRoom from "../components/DevRoom";
 import { Suspense } from "react";
 import { useMediaQuery } from "react-responsive";
 import { calculateSizes } from "../constants";
-import Target from "../components/Target";
 import ReactLogo from "../components/ReactLogo";
 import JavaLogo from "../components/JavaLogo";
 import CppLogo from "../components/CppLogo";
@@ -17,6 +16,10 @@ import RubiksCube from "../components/RubiksCube";
 import Pyraminx from "../components/Pyraminx";
 import SkewCube from "../components/SkewCube";
 import SkewedCube from "../components/SkewedCube";
+import PawnChess from "../components/PawnChess";
+import QueenChess from "../components/QueenChess";
+import KnightChess from "../components/KnightChess";
+import RockChess from "../components/RockChess";
 
 const Hero = () => {
   const isSmall = useMediaQuery({ maxWidth: 440 });
@@ -79,6 +82,10 @@ const Hero = () => {
               <Pyraminx position={sizes.pyraminxPosition} />
               <SkewCube position={sizes.skewCubePosition} />
               <SkewedCube position={sizes.skewedCubePosition} />
+              <PawnChess position={sizes.pawnChessPosition} />
+              <QueenChess position={sizes.queenChessPosition} />
+              <KnightChess position={sizes.knightChessPosition} />
+              <RockChess position={sizes.rookChessPosition} />
             </group>
 
             <ambientLight intensity={1} />

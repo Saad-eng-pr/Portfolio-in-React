@@ -16,8 +16,6 @@ const CsharpLogo = (props) => {
     <Float floatIntenity={0.7} >
       <group scale={0.01} {...props} dispose={null}>
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes['C#_C#_0'].geometry}
           material={materials.material}
           rotation={[-Math.PI / 2, 0, Math.PI / 3]}
