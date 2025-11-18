@@ -11,10 +11,10 @@ export const technologies = [
     name: "Java",
     icon: "/assets/technos/java.png",
   },
-  {
-    name: "Python",
-    icon: "/assets/technos/python.png",
-  },
+  // {
+  //   name: "Python",
+  //   icon: "/assets/technos/python.png",
+  // },
   {
     name: "Csharp",
     icon: "/assets/technos/csharp.png",
@@ -298,21 +298,21 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
 export const workExperiences = [
   {
     id: 1,
-    name: 'McSport® - Fanzone',
-    pos: ' Stage Développeur Web & Assistant Chef de Projet',
-    location: 'Île-de-France',
-    duration: 'Avril - Aout 2025 (5mois)',
-    title: "Durant mon stage chez McSport, j'ai travaillé comme Développeur Web et Assistant Chef de Projet. J'ai développé des POC en React pour valider des choix techniques, contribué à la conception UX/UI sur Figma, et rédigé la documentation associée. J'ai également assisté le chef de projet dans le suivi des tâches, la coordination, ainsi que dans la rédaction du cahier des charges, ce qui m'a permis de développer mes compétences en développement web et en gestion de projet.",
-    icon: '/assets/mcsport.png'
-  },
-  {
-    id: 2,
     name: 'Service Université Handicap - UCA (SUH)',
     pos: 'Tuteur académique',
     location: 'Clermont-Ferrand',
     duration: 'Octobre 2025 - Présent',
     title: "Tutorat d'un étudiant à l'ISIMA pour soutenir sa réussite académique, avec des séances dédiées à l'explication du cours et à la correction des exercices et examens, tout en adaptant l'accompagnement à ses besoins.",
     icon: '/assets/uca1.png',
+  },
+  {
+    id: 2,
+    name: 'McSport® - Fanzone',
+    pos: ' Stage Développeur Web & Assistant Chef de Projet',
+    location: 'Île-de-France',
+    duration: 'Avril - Aout 2025 (5 mois)',
+    title: "Durant mon stage chez McSport, j'ai travaillé comme Développeur Web et Assistant Chef de Projet. J'ai développé des POC en React pour valider des choix techniques, contribué à la conception UX/UI sur Figma, et rédigé la documentation associée. J'ai également assisté le chef de projet dans le suivi des tâches, la coordination, ainsi que dans la rédaction du cahier des charges, ce qui m'a permis de développer mes compétences en développement web et en gestion de projet.",
+    icon: '/assets/mcsport.png'
   },
   {
     id: 3,
@@ -323,4 +323,35 @@ export const workExperiences = [
     title: "Réalisation d'inventaires pour vérifier et enregistrer les stocks, en assurant la précision des données et le respect des procédures.",
     icon: '/assets/rgis-web-logo.svg',
   },
+];
+
+export const parcoursAcademique = [
+  {
+    id: 1,
+    name: "Diplôme d'Ingénieur en Informatique ISIMA",
+    school:"ISIMA (Institut Supérieur d'Informatique, de Modélisation et de leurs Applications)",
+    speciality: 'Génie logiciel et systèmes informatiques (BAC+5)',
+    location: 'Clermont-Ferrand',
+    duration: 'Septembre 2023 - Septembre 2026',
+    cours: "C++, C, Java, C#, architecture des systèmes, simulation, devops, développement web, développment mobile, deep learning",
+    icon: '/assets/uca1.png',
+  },
+  {
+    id: 2,
+    name: 'Classes Préparatoires',
+    speciality: 'Mathématiques et Physiques (MP)',
+    school : "CPGE Carnot Prépas",
+    location: 'MEKNES - Maroc',
+    duration: '2019 - 2023',
+    icon: '/assets/uca1.png',
+  },
+  {
+    id: 3,
+    name: 'Baccalauréat en sciences mathématiques',
+    speciality: ' Etablissement Scolaire Emile Anouar',
+    school : "Etablissement Scolaire Emile Anouar",
+    location: 'Clermont-Ferrand',
+    duration: 'Juin 2023',
+    icon: '/assets/uca1.png',
+  }
 ];

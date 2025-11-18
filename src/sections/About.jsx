@@ -6,6 +6,7 @@ import { Suspense } from "react";
 import { useMediaQuery } from "react-responsive";
 import { calculateSizes } from "../constants";
 import Puydedome from '../components/Puydedome';
+import BunnyDetective from '../components/BunnyDetective';
 
 
 const About = () => {
@@ -14,8 +15,8 @@ const About = () => {
     <section className='c-space mb-20 mt-[120px]' id="about">
         <div className='grid xl:grid-cols-3 xl:grid-rows-4 md:grid-cols-3 grid-cols-1 gap-5 h-full'>
             <div className='col-span-1 xl:row-span-2'>
-                <div className='grid-container'>
-                    <img src="/assets/grid1.png" alt="grid-1" className='w-full sm:[276px] h-fit object-contain' />
+                <div className='grid-container items-center'>
+                    <img src="/assets/profile-pic-1.png" alt="grid-1" className='w-[75%] sm:[276px] h-fit object-contain' />
 
                     <div > 
                         <p className='grid-headtext'>Rebonjour, c'est Saad AMAL</p>
@@ -27,11 +28,19 @@ const About = () => {
 
             <div className='col-span-1 xl:row-span-2'>
                 <div className='grid-container'>
-                    <img src="/assets/grid2.png" alt="grid-2" className='w-full sm:[326px] h-fit object-contain'/>
+                    <Canvas className='h-[200px]'>
+                        <Suspense fallback={<CanvasLoader />}>
+                            <PerspectiveCamera makeDefault position={[0, 0, 10]} />
+                                <BunnyDetective />
+                            <ambientLight intensity={1} />
+                            <directionalLight position={[10, 10, 10]} intensity={1} />
+                        </Suspense>
+                    </Canvas>
 
                     <div>
-                        <p className='grid-headtext'> Compétences Téchniques</p>
-                        <p className='grid-subtext'>Durant mon parcours à l'ISIMA j'ai eu l'opportunité de travailler avec divers outils et languages.</p>
+                        <p className='grid-headtext'> Actuellement à la recherche</p>
+                        <p className='grid-subtext'>d'un stage de fin d'études de 5 à 6 mois à partir d'avril 2026 en développement logiciel et/ou web.
+Curieux et motivé à apprendre et à me développer, j'aimerais participer à des projets concrets et enrichissants, tout en confrontant mes compétences à des défis variés.</p>
                     </div>
                 </div>
             </div>
