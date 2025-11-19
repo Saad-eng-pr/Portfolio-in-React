@@ -88,87 +88,13 @@ export const navLinks = [
 
 export const myProjects = [
   {
-    title: 'Podcastr - AI Podcast Platform',
-    desc: 'Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.',
+    title: "NewsSpectrum - Plateforme d'Analyse Médiatique",
+    desc: "NewsSpectrum est un projet de 2ᵉ année, réalisé en groupe de trois, visant à comparer des articles issus de différentes sources médiatiques pour mettre en évidence d'éventuels biais politiques. Le backend en Spring Boot et Java, associé à une base PostgreSQL conteneurisée via Docker, offre une architecture robuste et fiable.",
     subdesc:
-      'Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.',
-    href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
-    texture: '/textures/project/project1.mp4',
-    logo: '/assets/project-logo1.png',
-    logoStyle: {
-      backgroundColor: '#2A1816',
-      border: '0.2px solid #36201D',
-      boxShadow: '0px 0px 60px 0px #AA3C304D',
-    },
-    spotlight: '/assets/spotlight1.png',
-    tags: [
-      {
-        id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
-      },
-      {
-        id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
-      },
-      {
-        id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
-      },
-      {
-        id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
-      },
-    ],
-  },
-  {
-    title: 'LiveDoc - Real-Time Google Docs Clone',
-    desc: 'LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.',
-    subdesc:
-      'With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.',
-    href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
-    texture: '/textures/project/project2.mp4',
-    logo: '/assets/project-logo2.png',
-    logoStyle: {
-      backgroundColor: '#13202F',
-      border: '0.2px solid #17293E',
-      boxShadow: '0px 0px 60px 0px #2F6DB54D',
-    },
-    spotlight: '/assets/spotlight2.png',
-    tags: [
-      {
-        id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
-      },
-      {
-        id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
-      },
-      {
-        id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
-      },
-      {
-        id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
-      },
-    ],
-  },
-  {
-    title: 'CarePulse - Health Management System',
-    desc: 'An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.',
-    subdesc:
-      'With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.',
-    href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
-    texture: '/textures/project/project3.mp4',
-    logo: '/assets/project-logo3.png',
+      "L'interface, développée avec Angular, TypeScript, HTML et CSS, propose une expérience intuitive incluant recherche avancée et catégorisation par orientation médiatique. Le développement en équipe a été facilité par Git, garantissant une bonne coordination et un suivi propre du code.",
+    href: 'https://github.com/Saad-eng-pr/News-Spectrum',
+    texture: '/textures/project/news.mp4',
+    logo: '/assets/newsSpectrum.png',
     logoStyle: {
       backgroundColor: '#60f5a1',
       background:
@@ -176,104 +102,168 @@ export const myProjects = [
       border: '0.2px solid rgba(208, 213, 221, 1)',
       boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
     },
-    spotlight: '/assets/spotlight3.png',
+    spotlight: '/assets/lighterBlueSpotlight.png',
     tags: [
       {
         id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
+        name: 'Spring-boot',
+        path: '/assets/technos/spring.png',
       },
       {
         id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
+        name: 'Java',
+        path: '/assets/technos/java.png',
       },
       {
         id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
+        name: 'Angular',
+        path: 'assets/technos/angular.png',
       },
       {
         id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
+        name: 'TypeScript',
+        path: '/assets/technos/typescript.png',
+      },
+      {
+        id: 5,
+        name: 'PostgreSql',
+        path: '/assets/technos/postgresql.png',
+      },
+      {
+        id: 6,
+        name: 'Docker',
+        path: '/assets/technos/docker.png',
       },
     ],
   },
   {
-    title: 'Horizon - Online Banking Platform',
-    desc: 'Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.',
+    title: 'FilmFinder - API de Recherche de Films',
+    desc: "FilmFinder est un projet réalisé en groupe de trois, visant à développer une API RESTful pour rechercher, administrer et paginer des films, avec une validation stricte des données. Le backend en .NET et C# est sécurisé par une authentification JWT, et les données sont stockées dans une base SQLite.",
     subdesc:
-      'Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.',
-    href: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
-    texture: '/textures/project/project4.mp4',
-    logo: '/assets/project-logo4.png',
+      "Le projet inclut aussi une interface web développée avec Blazor, HTML et CSS, offrant une gestion intuitive des films. Le travail en équipe a été coordonné via Git, assurant un versionnement clair et efficace.",
+    href: 'https://github.com/Saad-eng-pr/Film-Finder',
+    texture: '/textures/project/filmFinder.mp4',
+    logo: '/assets/filmFinder.png',
     logoStyle: {
-      backgroundColor: '#0E1F38',
-      border: '0.2px solid #0E2D58',
-      boxShadow: '0px 0px 60px 0px #2F67B64D',
+      backgroundColor: '#13202F',
+      border: '0.2px solid #17293E',
+      boxShadow: '0px 0px 60px 0px #2F6DB54D',
     },
-    spotlight: '/assets/spotlight4.png',
+    spotlight: '/assets/purpleSpotlight.png',
     tags: [
       {
         id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
+        name: '.Net',
+        path: '/assets/technos/dotnet.png',
       },
       {
         id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
+        name: 'C#',
+        path: 'assets/technos/csharp.png',
       },
       {
         id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
+        name: 'Blazor',
+        path: '/assets/technos/blazor.png',
       },
       {
         id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
+        name: 'Sqlite',
+        path: '/assets/technos/sqlite.png',
       },
     ],
   },
   {
-    title: 'Imaginify - AI Photo Manipulation App',
-    desc: 'Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.',
+    title: 'Pentago - Jeu de Société et IA 1',
+    desc: "Pentago fait partie du projet de 1ʳᵉ année, et consistait à développer une intelligence artificielle pour le jeu Pentago en utilisant l'algorithme MINIMAX, combiné à des principes d'apprentissage par renforcement. L'ensemble de la logique de l'IA a été implémenté en C pour garantir de bonnes performances.",
     subdesc:
-      'Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.',
-    href: 'https://www.youtube.com/watch?v=Ahwoks_dawU',
-    texture: '/textures/project/project5.mp4',
-    logo: '/assets/project-logo5.png',
+      "Une interface graphique a également été développée avec SDL/SDL2, permettant de jouer contre l'IA et de visualiser les actions en temps réel. Le projet a été organisé et versionné à l'aide de Git.",
+    href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
+    texture: '/textures/project/pentago.mp4',
+    logo: '/assets/pentago.png',
     logoStyle: {
-      backgroundColor: '#1C1A43',
-      border: '0.2px solid #252262',
-      boxShadow: '0px 0px 60px 0px #635BFF4D',
+      backgroundColor: '#2A1816',
+      border: '0.2px solid #36201D',
+      boxShadow: '0px 0px 60px 0px #AA3C304D',
     },
-    spotlight: '/assets/spotlight5.png',
+    spotlight: '/assets/brownSpotlight.png',
     tags: [
       {
         id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
+        name: 'C',
+        path: '/assets/technos/c.png',
       },
       {
         id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
-      },
-      {
-        id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
-      },
-      {
-        id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
+        name: 'SDL',
+        path: 'assets/technos/sdl.png',
       },
     ],
   },
+  {
+    title: 'Roll For It - Jeu de Société et IA 2',
+    desc: "Le projet RollForIt consistait à développer une intelligence artificielle pour le jeu Roll for It, en utilisant l'algorithme MCTS (Monte Carlo Tree Search) afin de simuler et analyser différents scénarios de jeu pour prendre des décisions optimales. L'ensemble de la logique de l'IA a été implémenté en C pour garantir des performances efficaces.",
+    subdesc:
+      "Une interface graphique a également été créée avec SDL/SDL2, permettant de jouer contre l’IA et de visualiser les actions en temps réel. Le projet a été organisé et versionné avec Git.",
+    href: 'https://github.com/Saad-eng-pr/Roll-For-It',
+    texture: '/textures/project/roll-for-it.mp4',
+    logo: '/assets/roll-for-it.png',
+    logoStyle: {
+      backgroundColor: '#243D22',
+      border: '0.2px solid #243D22',
+      boxShadow: '0px 0px 60px 0px #243D22',
+    },
+    spotlight: '/assets/greenSpotlight.png',
+    tags: [
+      {
+        id: 1,
+        name: 'C',
+        path: '/assets/technos/c.png',
+      },
+      {
+        id: 2,
+        name: 'SDL',
+        path: 'assets/technos/sdl.png',
+      },
+    ],
+  },
+  // {
+  //   title: 'Imaginify - AI Photo Manipulation App',
+  //   desc: 'Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.',
+  //   subdesc:
+  //     'Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.',
+  //   href: 'https://www.youtube.com/watch?v=Ahwoks_dawU',
+  //   texture: '/textures/project/project5.mp4',
+  //   logo: '/assets/project-logo5.png',
+  //   logoStyle: {
+  //     backgroundColor: '#1C1A43',
+  //     border: '0.2px solid #252262',
+  //     boxShadow: '0px 0px 60px 0px #635BFF4D',
+  //   },
+  //   spotlight: '/assets/spotlight5.png',
+  //   tags: [
+  //     {
+  //       id: 1,
+  //       name: 'React.js',
+  //       path: '/assets/react.svg',
+  //     },
+  //     {
+  //       id: 2,
+  //       name: 'TailwindCSS',
+  //       path: 'assets/tailwindcss.png',
+  //     },
+  //     {
+  //       id: 3,
+  //       name: 'TypeScript',
+  //       path: '/assets/typescript.png',
+  //     },
+  //     {
+  //       id: 4,
+  //       name: 'Framer Motion',
+  //       path: '/assets/framer.png',
+  //     },
+  //   ],
+  // },
 ];
 
 export const calculateSizes = (isSmall, isMobile, isTablet) => {
