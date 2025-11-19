@@ -338,8 +338,8 @@ export const parcoursAcademique = [
     speciality: 'Génie logiciel et systèmes informatiques (BAC+5)',
     location: 'Clermont-Ferrand',
     duration: 'Septembre 2023 - Septembre 2026',
-    cours: "C++, C, Java, C#, architecture des systèmes, simulation, devops, développement web, développment mobile, deep learning",
-    icon: '/assets/uca1.png',
+    cours: "Cours : C++, C, Java, C#, UML, Sécurité réseaux, Devops, Développement web, Développment mobile, Deep learning, Python",
+    icon: '/assets/isima.png',
   },
   {
     id: 2,
@@ -348,15 +348,15 @@ export const parcoursAcademique = [
     school : "CPGE Carnot Prépas",
     location: 'MEKNES - Maroc',
     duration: '2019 - 2023',
-    icon: '/assets/uca1.png',
+    icon: '/assets/cpge.png',
   },
   {
     id: 3,
-    name: 'Baccalauréat en sciences mathématiques',
-    speciality: ' Etablissement Scolaire Emile Anouar',
+    name: 'Baccalauréat en sciences mathes A',
+    speciality: 'Sciences mathématiques A (Option Français) ',
     school : "Etablissement Scolaire Emile Anouar",
-    location: 'Clermont-Ferrand',
+    location: 'MEKNES - Maroc',
     duration: 'Juin 2023',
-    icon: '/assets/uca1.png',
+    icon: '/assets/emile.png',
   }
 ];
