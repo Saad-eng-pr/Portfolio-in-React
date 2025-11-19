@@ -6,6 +6,7 @@ import Footer from './sections/Footer'
 import Experience from './sections/Experience'
 import Contact from './sections/Contact'
 import Tech from './sections/Tech'
+import Education from './sections/Education'
 
 const App = () => {
   return (
@@ -17,6 +18,8 @@ const App = () => {
       <About />
 
       <Experience />
+
+      <Education />
 
       <Projects />
 

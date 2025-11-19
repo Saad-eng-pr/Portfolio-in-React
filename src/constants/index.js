@@ -71,11 +71,16 @@ export const navLinks = [
   },
   {
     id: 4,
+    name: 'Formation',
+    href: '#education',
+  },
+  {
+    id: 5,
     name: 'Projets',
     href: '#projects',
   },
   {
-    id: 5,
+    id: 6,
     name: 'Contact',
     href: '#contact',
   },

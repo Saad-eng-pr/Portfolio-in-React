@@ -3,7 +3,7 @@ import React from 'react'
 const Contact = () => {
   return (
     <section className="c-space my-20" id="contact">
-        <p className="head-text text-center mb-5">Contactez-moi</p>
+        <p className="head-text text-center mb-5 hover:text-white transition ease-in-out duration-500">Contactez-moi</p>
 
         <div className="max-w-3xl mx-auto border border-black-200 bg-black-200 rounded-lg flex  gap-6 justify-center items-center justify-between p-6 text-lg">
 

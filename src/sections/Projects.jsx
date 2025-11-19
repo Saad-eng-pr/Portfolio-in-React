@@ -24,7 +24,7 @@ const Projects = () => {
   const currentProject = myProjects[selectedProjectIndex];
   return (
     <section className='c-space my-10' id="projects">
-        <p className='head-text'>Projets Académiques et personnels</p>
+        <p className='head-text hover:text-white transition ease-in-out duration-500'>Projets Académiques et personnels</p>
 
         <div className='grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 h-full'>
             <div className='flex flex-col gap-5 relative sm:p-10 px-5 shadow-2xl shadow-black-200'>

@@ -1,11 +1,11 @@
-import { Canvas } from "@react-three/fiber"
+
 import { workExperiences } from "../constants"
-import { div } from "three/tsl"
+
 
 const Experience = () => {
   return (
     <section className="c-space my-20" id="work">
-        <p className="head-text">Expériences profetionnelles</p>
+        <p className="head-text hover:text-white transition ease-in-out duration-500">Expériences profetionnelles</p>
 
         <div className="gap-5 mt-12 max-w-4xl xl:max-w-6xl mx-auto">
             <div className="work-content">

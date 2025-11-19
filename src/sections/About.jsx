@@ -16,12 +16,12 @@ const About = () => {
         <div className='grid xl:grid-cols-3 xl:grid-rows-4 md:grid-cols-3 grid-cols-1 gap-5 h-full'>
             <div className='col-span-1 xl:row-span-2'>
                 <div className='grid-container items-center'>
-                    <img src="/assets/profile-pic-1.png" alt="grid-1" className='w-[75%] sm:[276px] h-fit object-contain' />
+                    <img src="/assets/profile-pic.png" alt="grid-1" className='w-[75%] sm:[276px] h-fit object-contain' />
 
                     <div > 
                         <p className='grid-headtext'>Rebonjour, c'est Saad AMAL</p>
                         <p className='grid-subtext'> Passionné par le développement logiciel et la conception d’applications fiables et évolutives, je cherche un stage de fin 
- d’études de 5 à 6 mois à partir d’avril 2026, afin de contribuer à la création de logiciels innovants et optimisés.</p>
+ d’études de 5 à 6 mois à partir d'avril 2026, afin de contribuer à la création de logiciels innovants et optimisés.</p>
                     </div>
                 </div>
             </div>
