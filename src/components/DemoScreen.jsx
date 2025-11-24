@@ -38,7 +38,7 @@ const DemoScreen = (props) => {
           material={nodes['monitor-screen'].material}
           position={[0.127, 1.831, 0.511]}
           rotation={[1.571, -0.005, 0.031]}
-          scale={[0.661, 0.608, 0.401]}
+          scale={[0.62, 0.608, 0.401]}
         >
             <meshBasicMaterial map={txt}/>
         </mesh>

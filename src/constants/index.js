@@ -88,6 +88,75 @@ export const navLinks = [
 
 export const myProjects = [
   {
+    title: 'Hackathon Sopra Steria - 24H pour réinventer la santé',
+    desc: "Participation au Hackathon Sopra Steria “24H pour réinventer la santé”, organisé aux Laboratoires Théa. Deux jours intenses d'innovation et de réflexion autour du thème réinventer la santé, durant lesquels notre équipe - Andry Grolleau, Sara Allali et Nasri Ayoub - a imaginé BoostUp, une application destinée aux sportifs professionnels. Elle centralise les données issues des objets connectés et combine ces informations avec l'état mental renseigné quotidiennement.",
+    subdesc:
+      "Le travail a porté sur l'intégration des données, la conception d'un prototype interactif et la création d'un modèle d'IA prédictif capable d'anticiper les risques de blessures ou de troubles mentaux, afin d'améliorer l'accompagnement global des athlètes.",
+    href: 'https://github.com/HackathonConnectedHealth/HackathonFrontEnd',
+    texture: '/textures/project/hackathon.mp4',
+    logo: '/assets/boostup1.png',
+    logoStyle: {
+      backgroundColor: '#ffffff',
+      border: '0.2px solid #243D22',
+      boxShadow: '0px 0px 60px 0px #243D22',
+    },
+    spotlight: '/assets/greenSpotlight.png',
+    tags: [
+      {
+        id: 1,
+        name: 'React',
+        path: '/assets/technos/reactjs.png',
+      },
+      {
+        id: 2,
+        name: 'TypeScript',
+        path: '/assets/technos/typescript.png',
+      },
+      {
+        id: 3,
+        name: 'Figma',
+        path: 'assets/technos/figma.png',
+      },
+    ],
+  },
+  {
+    title: 'Tourvisto - AI Trips Generator',
+    desc: "Tourvisto est une application web permettant de générer des itinéraires de voyage entièrement personnalisés grâce à l'IA Gemini Flash 2.0. Le projet s'appuie sur un front-end en React, TypeScript et TailwindCSS, et un back-end en Node.js qui interagit avec l'IA pour proposer des plans de voyage adaptés aux préférences, contraintes et envies des utilisateurs.",
+    subdesc:
+      "Un back-office administrateur a également été développé pour gérer les utilisateurs, suivre l'activité et superviser la plateforme côté serveur. Ce projet a été l'occasion de renforcer des compétences en architecture full-stack, intégration de modèles d'IA générative et conception d'interfaces modernes et fonctionnelles.",
+    href: 'https://github.com/Saad-eng-pr/travel-app',
+    texture: '/textures/project/tourvisto.mp4',
+    logo: '/assets/tourvisto.svg',
+    logoStyle: {
+      backgroundColor: '#13202F',
+      border: '0.2px solid #17293E',
+      boxShadow: '0px 0px 60px 0px #2F6DB54D',
+    },
+    spotlight: '/assets/lighterBlueSpotlight.png',
+    tags: [
+      {
+        id: 1,
+        name: 'React',
+        path: '/assets/technos/reactjs.png',
+      },
+      {
+        id: 2,
+        name: 'Typescript',
+        path: 'assets/technos/typescript.png',
+      },
+      {
+        id: 3,
+        name: 'Tailwindcss',
+        path: 'assets/technos/tailwind.png',
+      },
+      {
+        id: 4,
+        name: 'React Router',
+        path: '/assets/technos/reactrouter.png',
+      },
+    ],
+  },
+  {
     title: "NewsSpectrum - Plateforme d'Analyse Médiatique",
     desc: "NewsSpectrum est un projet de 2ᵉ année, réalisé en groupe de trois, visant à comparer des articles issus de différentes sources médiatiques pour mettre en évidence d'éventuels biais politiques. Le backend en Spring Boot et Java, associé à une base PostgreSQL conteneurisée via Docker, offre une architecture robuste et fiable.",
     subdesc:
@@ -201,6 +270,38 @@ export const myProjects = [
     ],
   },
   {
+    title: 'Trip Advisor',
+    desc: "Trip Advisor est une application web qui permet de découvrir facilement restaurants, hôtels et attractions à proximité grâce à une carte interactive. Développée avec React et l'API Google Maps, elle affiche les points d'intérêt autour de l'utilisateur, alimentés par une API externe fournissant photos, avis et informations détaillées.",
+    subdesc:
+      "L'interface propose aussi des cartes informatives pour chaque lieu ainsi que des filtres par type (restaurant, hôtel, attraction) ou par nombre d'étoiles, offrant une recherche simple, rapide et personnalisée. Le projet met en avant l'intégration d'APIs, la géolocalisation et la création d'une expérience utilisateur minimaliste et fluide.",
+    href: 'https://github.com/Saad-eng-pr/Film-Finder',
+    texture: '/textures/project/tripadvisor.mp4',
+    logo: '/assets/tripadvisor.png',
+    logoStyle: {
+      backgroundColor: '#13202F',
+      border: '0.2px solid #17293E',
+      boxShadow: '0px 0px 60px 0px #2F6DB54D',
+    },
+    spotlight: '/assets/purpleSpotlight.png',
+    tags: [
+      {
+        id: 1,
+        name: 'React',
+        path: '/assets/technos/reactjs.png',
+      },
+      {
+        id: 2,
+        name: 'Javascript',
+        path: 'assets/technos/javascript.png',
+      },
+      {
+        id: 3,
+        name: 'Tailwindcss',
+        path: 'assets/technos/tailwind.png',
+      },
+    ],
+  },
+  {
     title: 'Roll For It - Jeu de Société et IA 2',
     desc: "Le projet RollForIt consistait à développer une intelligence artificielle pour le jeu Roll for It, en utilisant l'algorithme MCTS (Monte Carlo Tree Search) afin de simuler et analyser différents scénarios de jeu pour prendre des décisions optimales. L'ensemble de la logique de l'IA a été implémenté en C pour garantir des performances efficaces.",
     subdesc:
@@ -227,43 +328,58 @@ export const myProjects = [
       },
     ],
   },
-  // {
-  //   title: 'Imaginify - AI Photo Manipulation App',
-  //   desc: 'Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.',
-  //   subdesc:
-  //     'Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.',
-  //   href: 'https://www.youtube.com/watch?v=Ahwoks_dawU',
-  //   texture: '/textures/project/project5.mp4',
-  //   logo: '/assets/project-logo5.png',
-  //   logoStyle: {
-  //     backgroundColor: '#1C1A43',
-  //     border: '0.2px solid #252262',
-  //     boxShadow: '0px 0px 60px 0px #635BFF4D',
-  //   },
-  //   spotlight: '/assets/spotlight5.png',
-  //   tags: [
-  //     {
-  //       id: 1,
-  //       name: 'React.js',
-  //       path: '/assets/react.svg',
-  //     },
-  //     {
-  //       id: 2,
-  //       name: 'TailwindCSS',
-  //       path: 'assets/tailwindcss.png',
-  //     },
-  //     {
-  //       id: 3,
-  //       name: 'TypeScript',
-  //       path: '/assets/typescript.png',
-  //     },
-  //     {
-  //       id: 4,
-  //       name: 'Framer Motion',
-  //       path: '/assets/framer.png',
-  //     },
-  //   ],
-  // },
+  {
+    title: 'Simulation 3D Terre-Lune',
+    desc: "Ce projet consiste à créer une simulation interactive en 3D de la Terre et de la Lune avec Three.js, incluant la rotation de la Terre sur elle-même et l'orbite de la Lune autour de la Terre.",
+    subdesc: "Le projet utilise des textures réalistes et un éclairage simulant le soleil pour un rendu immersif. La caméra est interactive, permettant de zoomer et naviguer autour du système Terre-Lune.",
+    href: 'https://github.com/Saad-eng-pr/3D-Earth-with-Three-Js',
+    texture: '/textures/project/earth.mp4',
+    logo: '/assets/earth.png',
+    logoStyle: {
+      backgroundColor: '#0D1B2A',
+      border: '0.2px solid #1B2A41',
+      boxShadow: '0px 0px 60px 0px #3C6EAA4D',
+    },
+    spotlight: '/assets/lightblueSpotlight.png',
+    tags: [
+      {
+        id: 1,
+        name: 'Three.js',
+        path: '/assets/technos/threejs.svg',
+      },
+      {
+        id: 2,
+        name: 'JavaScript',
+        path: '/assets/technos/javascript.png',
+      },
+    ],
+  },
+  {
+    title: 'Horloge 3D Interactive',
+    desc: "Ce projet est une horloge 3D interactive réalisée avec Three.js, représentant les heures, minutes et secondes grâce à des anneaux et des lignes en rotation temps réel.",
+    subdesc: "La scène intègre un éclairage HDR pour des réflexions réalistes, et permet des interactions fluides avec la souris et le contrôle de caméra via OrbitControls.",
+    href: 'https://github.com/Saad-eng-pr/3D-Clock-with-THREE-JS',
+    texture: '/textures/project/clock.mp4',
+    logo: '/assets/clock.png',
+    logoStyle: {
+      backgroundColor: '#1A1A1A',
+      border: '0.2px solid #333333',
+      boxShadow: '0px 0px 60px 0px #5555FF4D',
+    },
+    spotlight: '/assets/lightblueSpotlight.png',
+    tags: [
+      {
+        id: 1,
+        name: 'Three.js',
+        path: '/assets/technos/threejs.svg',
+      },
+      {
+        id: 2,
+        name: 'JavaScript',
+        path: '/assets/technos/javascript.png',
+      },
+    ],
+  }
 ];
 
 export const calculateSizes = (isSmall, isMobile, isTablet) => {

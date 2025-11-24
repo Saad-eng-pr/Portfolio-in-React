@@ -33,7 +33,7 @@ const Projects = () => {
               </div>
 
               <div className='p-3 backdrop-filter backdrop-blur-3xl w-fit rounded-lg' style={currentProject.logoStyle}>
-                <img src={currentProject.logo} alt="logo" className='w-10 h-10 shadow-sm'/> 
+                <img src={currentProject.logo} alt="logo" className='w-12 h-12 shadow-sm object-fit'/> 
               </div>
 
               <div className='flex flex-col gap-5 text-white-600 my-5'>
@@ -76,7 +76,7 @@ const Projects = () => {
 
                 <Center>
                   <Suspense fallback={<CanvasLoader />} >
-                    <group scale={2} position={[0, -3, 0]} rotation={[0, -0.1, 0]}>
+                    <group scale={2} position={[-0.3, -3, 0]} rotation={[0, -0.1, 0]}>
                       <DemoScreen texture={currentProject.texture}/>
                     </ group>
                   </Suspense>
