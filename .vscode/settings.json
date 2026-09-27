@@ -1,0 +1,7 @@
+//ctrl + shifr + p and then Open Workspace Setting (JSON)
+{
+        "files.associations": {
+        "*.css": "tailwindcss"
+    },
+}
+
