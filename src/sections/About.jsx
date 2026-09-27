@@ -10,7 +10,7 @@ const About = () => {
   
   return (
     <section className='c-space mb-20 mt-[120px]' id="about">
-        <div className='grid xl:grid-cols-3 xl:grid-rows-2 md:grid-cols-3 grid-cols-1 gap-5 h-full grid-flow-row-dense auto-rows-auto'>
+        <div className='grid xl:grid-cols-3 xl:grid-rows-2 md:grid-cols-3 grid-cols-1 gap-5 h-full grid-flow-row-dense auto-rows-auto '>
             <div className='col-span-1 xl:row-span-1'>
                 <div className='grid-container items-center'>
                     <img src="/assets/profile.jpeg" alt="grid-1" className='xl:mt-24 w-[90%]  h-fit object-contain' />

@@ -36,7 +36,7 @@ const Hero = () => {
           Bonjour, c'est Saad AMAL <span className="waving-hand">👋</span>
         </p>
         <p className="hero_tag text-gray_gradient">
-          Étudiant Ingénieur en Informatique
+          Ingénieur en informatique 
         </p>
 
         <div className="flex justify-center gap-4">
@@ -59,7 +59,7 @@ const Hero = () => {
       </div>
 
       {/* 3D model below the text */}
-      <div className="w-full h-full absolute mt-[100px]"> 
+      <div className="w-full h-full absolute mt-[130px]"> 
         <Canvas className="w-full h-full">
           <Suspense fallback={<CanvasLoader />}>
             <PerspectiveCamera makeDefault position={[0, 0, 20]} />

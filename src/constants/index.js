@@ -312,7 +312,7 @@ export const myProjects = [
     desc: "Pentago fait partie du projet de 1ʳᵉ année, et consistait à développer une intelligence artificielle pour le jeu Pentago en utilisant l'algorithme MINIMAX, combiné à des principes d'apprentissage par renforcement. L'ensemble de la logique de l'IA a été implémenté en C pour garantir de bonnes performances.",
     subdesc:
       "Une interface graphique a également été développée avec SDL/SDL2, permettant de jouer contre l'IA et de visualiser les actions en temps réel. Le projet a été organisé et versionné à l'aide de Git.",
-    href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
+    href: 'https://github.com/Saad-eng-pr/Pentago',
     texture: '/textures/project/pentago.mp4',
     logo: '/assets/pentago.png',
     logoStyle: {
@@ -339,7 +339,7 @@ export const myProjects = [
     desc: "Trip Advisor est une application web qui permet de découvrir facilement restaurants, hôtels et attractions à proximité grâce à une carte interactive. Développée avec React et l'API Google Maps, elle affiche les points d'intérêt autour de l'utilisateur, alimentés par une API externe fournissant photos, avis et informations détaillées.",
     subdesc:
       "L'interface propose aussi des cartes informatives pour chaque lieu ainsi que des filtres par type (restaurant, hôtel, attraction) ou par nombre d'étoiles, offrant une recherche simple, rapide et personnalisée. Le projet met en avant l'intégration d'APIs, la géolocalisation et la création d'une expérience utilisateur minimaliste et fluide.",
-    href: 'https://github.com/Saad-eng-pr/Film-Finder',
+    href: 'https://github.com/Saad-eng-pr/travel-advisor',
     texture: '/textures/project/tripadvisor.mp4',
     logo: '/assets/tripadvisor.png',
     logoStyle: {
