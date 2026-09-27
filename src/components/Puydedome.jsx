@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import { Float, useGLTF, useTexture } from '@react-three/drei'
 
 const Puydedome = (props) => {

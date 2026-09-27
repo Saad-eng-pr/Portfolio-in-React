@@ -1,4 +1,4 @@
-import { parcoursAcademique, workExperiences } from "../constants"
+import { parcoursAcademique } from "../constants"
 
 const Education = () => {
   return (

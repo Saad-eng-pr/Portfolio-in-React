@@ -6,7 +6,7 @@ Source: https://sketchfab.com/3d-models/c-1b277fc32bbc451fa6f40e298996ba91
 Title: C++
 */
 
-import React, { useRef } from 'react'
+import React from 'react'
 import { Float, useGLTF } from '@react-three/drei'
 
 const CppLogo =(props) => {

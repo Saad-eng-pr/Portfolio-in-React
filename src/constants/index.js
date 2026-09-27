@@ -1,5 +1,13 @@
 export const technologies = [
   {
+    name: "Java",
+    icon: "/assets/technos/java.png",
+  },
+  {
+    name: "Python",
+    icon: "/assets/technos/python.png",
+  },
+  {
     name: "Cpp",
     icon: "/assets/technos/cpp.png",
   },
@@ -7,14 +15,6 @@ export const technologies = [
     name: "C",
     icon: "/assets/technos/c.png",
   },
-  {
-    name: "Java",
-    icon: "/assets/technos/java.png",
-  },
-  // {
-  //   name: "Python",
-  //   icon: "/assets/technos/python.png",
-  // },
   {
     name: "Csharp",
     icon: "/assets/technos/csharp.png",
@@ -42,10 +42,6 @@ export const technologies = [
   {
     name: "TypeScript",
     icon: "/assets/technos/typescript.png",
-  },
-  {
-    name: "Threejs",
-    icon: "/assets/technos/threejs.svg",
   },
   {
     name: "Docker",
@@ -87,6 +83,75 @@ export const navLinks = [
 ];
 
 export const myProjects = [
+  {
+    title: 'Solution de capture vidéo et transcription par IA',
+    desc: "Projet réalisé en contexte entreprise : développement d'une extension Chrome en React pour capturer des vidéos et enregistrer des sessions destinées au partage interne.",
+    subdesc:
+      "Conception d'une application de bureau multiplateforme avec Electron et Next.js, intégrant la capture vidéo et la transcription automatique par IA grâce à Whisper d'OpenAI.",
+    href: null,
+    texture: '/textures/project/fluidy.mp4',
+    logo: '/assets/fluidy.png',
+    logoStyle: {
+      backgroundColor: '#13202F',
+      border: '0.2px solid #17293E',
+      boxShadow: '0px 0px 60px 0px #2F6DB54D',
+    },
+    spotlight: '/assets/lighterBlueSpotlight.png',
+    tags: [
+      {
+        id: 1,
+        name: 'React',
+        path: '/assets/technos/reactjs.png',
+      },
+      {
+        id: 2,
+        name: 'Next.js',
+        path: '/assets/technos/javascript.png',
+      },
+      {
+        id: 3,
+        name: 'Electron',
+        path: '/assets/technos/nodejs.png',
+      },
+    ],
+  },
+  {
+    title: 'ZZChat - AI Tutor & Learning System',
+    desc: "ZZChat est une application full-stack combinant un assistant pédagogique basé sur le RAG et un module de classification d'images, développée dans le cadre d'un projet de deep learning à l'ISIMA.",
+    subdesc:
+      "L'assistant s'appuie sur Mistral 7B via Ollama, LangChain et FAISS pour répondre à des questions techniques à partir d'une base documentaire. Le module de vision compare des modèles MLP, CNN et MobileNetV2 sur une classification binaire banane-sushi, avec un suivi de la consommation énergétique via CodeCarbon.",
+    href: 'https://github.com/Saad-eng-pr/ZZChat-IATuteur',
+    texture: '/textures/project/zzchat.mp4',
+    logo: '/assets/zzchat.png',
+    logoStyle: {
+      backgroundColor: '#1A1A1A',
+      border: '0.2px solid #333333',
+      boxShadow: '0px 0px 60px 0px #5555FF4D',
+    },
+    spotlight: '/assets/purpleSpotlight.png',
+    tags: [
+      {
+        id: 1,
+        name: 'Python',
+        path: '/assets/technos/python.png',
+      },
+      {
+        id: 2,
+        name: 'Flask',
+        path: '/assets/flask.webp',
+      },
+      {
+        id: 3,
+        name: 'React',
+        path: '/assets/technos/reactjs.png',
+      },
+      {
+        id: 4,
+        name: 'TensorFlow',
+        path: '/assets/tensorflow.png',
+      },
+    ],
+  },
   {
     title: 'Hackathon Sopra Steria - 24H pour réinventer la santé',
     desc: "Participation au Hackathon Sopra Steria “24H pour réinventer la santé”, organisé aux Laboratoires Théa. Deux jours intenses d'innovation et de réflexion autour du thème réinventer la santé, durant lesquels notre équipe - Andry Grolleau, Sara Allali et Nasri Ayoub - a imaginé BoostUp, une application destinée aux sportifs professionnels. Elle centralise les données issues des objets connectés et combine ces informations avec l'état mental renseigné quotidiennement.",
@@ -409,28 +474,39 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
 export const workExperiences = [
   {
     id: 1,
+    name: 'ALTEN',
+    pos: 'Stagiaire ingénieur logiciel / Full-stack',
+    location: 'Rennes',
+    duration: 'Avril - Septembre 2026 (6 mois)',
+    title: "Au sein du Lab Innovation d'ALTEN, j'ai contribué au développement d'un socle de services réutilisables pour des applications d'intelligence artificielle. Avec Python et FastAPI, j'ai travaillé sur des API dédiées à la gestion des prompts, à l'inférence de modèles, à la traçabilité des données et à la journalisation des échanges MCP. J'ai harmonisé leur architecture, généré des SDK à partir de spécifications OpenAPI et développé des bibliothèques clientes afin de faciliter leur intégration.\n\nJ'ai également intégré l'authentification via Microsoft Entra ID ainsi qu'un contrôle des autorisations par action. Pour améliorer la fiabilité des services, j'ai contribué à leur migration vers PostgreSQL, mis en place des pipelines Azure DevOps et renforcé les tests automatisés avec Pytest, jusqu'à dépasser 85 % de couverture sur trois services.\n\nEn parallèle, j'ai conçu un frontend générique en React et TypeScript, configurable à partir de manifestes JSON, afin de réutiliser les mêmes composants et parcours dans différentes applications d'IA. Les services développés ont finalement été intégrés dans quatre projets internes du Lab.",
+    tools: 'Python, FastAPI, React, TypeScript, OpenAPI, PostgreSQL, Pytest, Docker, Azure DevOps, Microsoft Entra ID',
+    icon: '/assets/alten.png',
+  },
+  {
+    id: 2,
     name: 'Service Université Handicap - UCA (SUH)',
     pos: 'Tuteur académique',
     location: 'Clermont-Ferrand',
-    duration: 'Octobre 2025 - Présent',
+    duration: 'Octobre 2025 - Mars 2026 (6 mois)',
     title: "Tutorat d'un étudiant à l'ISIMA pour soutenir sa réussite académique, avec des séances dédiées à l'explication du cours et à la correction des exercices et examens, tout en adaptant l'accompagnement à ses besoins.",
     icon: '/assets/uca1.png',
   },
   {
-    id: 2,
+    id: 3,
     name: 'McSport® - Fanzone',
-    pos: ' Stage Développeur Web & Assistant Chef de Projet',
+    pos: 'Stagiaire développeur web & assistant chef de projet',
     location: 'Île-de-France',
-    duration: 'Avril - Aout 2025 (5 mois)',
-    title: "Durant mon stage chez McSport, j'ai travaillé comme Développeur Web et Assistant Chef de Projet. J'ai développé des POC en React pour valider des choix techniques, contribué à la conception UX/UI sur Figma, et rédigé la documentation associée. J'ai également assisté le chef de projet dans le suivi des tâches, la coordination, ainsi que dans la rédaction du cahier des charges, ce qui m'a permis de développer mes compétences en développement web et en gestion de projet.",
+    duration: 'Avril - Août 2025 (5 mois)',
+    title: "Durant mon stage chez McSport, j'ai travaillé comme développeur web et assistant chef de projet. J'ai développé des POC en React pour valider des choix techniques, contribué à la conception UX/UI sur Figma et rédigé la documentation associée.\n\nJ'ai également assisté le chef de projet dans le suivi des tâches, la coordination ainsi que dans la rédaction du cahier des charges, ce qui m'a permis de développer mes compétences en développement web et en gestion de projet.",
+    tools: 'Node.js, React, JavaScript, Tailwind CSS, Figma',
     icon: '/assets/mcsport.png'
   },
   {
-    id: 3,
+    id: 4,
     name: 'RGIS',
     pos: 'Inventoriste / Auditeur en inventaire',
     location: 'Clermont-Ferrand',
-    duration: 'Aout 2024 - Octobre 2024',
+    duration: 'Août 2024 - Octobre 2024',
     title: "Réalisation d'inventaires pour vérifier et enregistrer les stocks, en assurant la précision des données et le respect des procédures.",
     icon: '/assets/rgis-web-logo.svg',
   },
@@ -444,7 +520,7 @@ export const parcoursAcademique = [
     speciality: 'Génie logiciel et systèmes informatiques (BAC+5)',
     location: 'Clermont-Ferrand',
     duration: 'Septembre 2023 - Septembre 2026',
-    cours: "Cours : C++, C, Java, C#, UML, Sécurité réseaux, Devops, Développement web, Développment mobile, Deep learning, Python",
+    cours: "Cours : C++, C, Java, C#, UML, sécurité réseau, DevOps, développement web, développement mobile, deep learning, Python",
     icon: '/assets/isima.png',
   },
   {

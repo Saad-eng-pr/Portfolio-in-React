@@ -6,7 +6,7 @@ Source: https://sketchfab.com/3d-models/chess-piece-knight-736236d00cfe4cb9a88be
 Title: Chess Piece - Knight
 */
 
-import React, { useRef } from 'react'
+import React from 'react'
 import { Float, useGLTF } from '@react-three/drei'
 
 const KnightChess = (props) => {

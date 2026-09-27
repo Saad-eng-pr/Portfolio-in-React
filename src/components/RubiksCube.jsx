@@ -6,16 +6,13 @@ Source: https://sketchfab.com/3d-models/rubiks-cube-4cc7c1bf585f4b929ddd32f6cab3
 Title: RUBIK'S CUBE
 */
 
-import React, { useRef, useState } from 'react'
-import { useGLTF, useAnimations } from '@react-three/drei'
+import React, { useRef } from 'react'
+import { useGLTF } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
-import { useGSAP } from '@gsap/react'
-import gsap from 'gsap'
 
 const RubiksCube = (props) => {
   const group = useRef()
-  const { nodes, materials, animations } = useGLTF('/models/rubiks_cube .glb')
-  const { actions } = useAnimations(animations, group)
+  const { nodes, materials } = useGLTF('/models/rubiks_cube .glb')
 
   useFrame((state, delta) => {
     if (group.current) {
@@ -26,7 +23,7 @@ const RubiksCube = (props) => {
 
   return (
     <group ref={group} {...props} dispose={null} scale={0.004}>
-      <group name="Sketchfab_Scene" onPointerEnter={() => setHovered(true)} >
+      <group name="Sketchfab_Scene">
         <group
           name="Sketchfab_model"
           position={[0, -0.002, 0]}

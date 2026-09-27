@@ -5,7 +5,7 @@ const Contact = () => {
     <section className="c-space my-20" id="contact">
         <p className="head-text text-center mb-5 hover:text-white transition ease-in-out duration-500">Contactez-moi</p>
 
-        <div className="max-w-3xl mx-auto border border-black-200 bg-black-200 rounded-lg flex  gap-6 justify-center items-center justify-between p-6 text-lg">
+        <div className="max-w-3xl mx-auto border border-black-200 bg-black-200 rounded-lg flex flex-col sm:flex-row gap-6 justify-center items-start sm:items-center justify-between p-6 text-lg">
 
             <div className="flex items-center gap-4">
             <img src="/assets/email.png" alt="email" className="social-icon bg-gray-200 hover:bg-white w-12 h-12 p-2" />
@@ -16,9 +16,7 @@ const Contact = () => {
 
             <div className="flex items-center gap-4">
             <img src="/assets/phone-.svg" alt="phone" className="social-icon bg-gray-200 hover:bg-white w-12 h-12 p-2" />
-            <p className="sub-text text-gray-400 hover:text-white text-center">
-                +33 7 51 12 77 19
-            </p>
+            <a className="sub-text text-gray-400 hover:text-white text-center" href="tel:+33751127719">+33 7 51 12 77 19</a>
             </div>
 
             <div className="flex items-center gap-4">

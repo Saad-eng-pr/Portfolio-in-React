@@ -7,13 +7,12 @@ Title: Skewed Rubiks Cube
 */
 
 import React, { useRef } from 'react'
-import { useGLTF, useAnimations } from '@react-three/drei'
+import { useGLTF } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
 
 const SkewedCube = (props) => {
   const group = useRef()
-  const { nodes, materials, animations } = useGLTF('/models/skewed_rubiks_cube.glb')
-  const { actions } = useAnimations(animations, group)
+  const { nodes, materials } = useGLTF('/models/skewed_rubiks_cube.glb')
 
   useFrame((state, delta) => {
     if(group.current) {

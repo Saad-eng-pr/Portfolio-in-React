@@ -52,10 +52,12 @@ const Projects = () => {
                   ))}
                 </div>
 
-                <a className='flex items-center gap-2 cursor-pointer text-white-600' href={currentProject.href} target='_blank' rel='noreferrer'>
-                  <p>repo Github</p>
-                  <img src="/assets/arrow-up.png" alt="arrow" className='w-3 h-3' />
-                </a>
+                {currentProject.href && (
+                  <a className='flex items-center gap-2 cursor-pointer text-white-600' href={currentProject.href} target='_blank' rel='noreferrer'>
+                    <p>Repo GitHub</p>
+                    <img src="/assets/arrow-up.png" alt="arrow" className='w-3 h-3' />
+                  </a>
+                )}
               </div>
 
               <div className='flex justify-between items-center my-7'>
@@ -76,7 +78,7 @@ const Projects = () => {
 
                 <Center>
                   <Suspense fallback={<CanvasLoader />} >
-                    <group scale={2} position={[-0.3, -3, 0]} rotation={[0, -0.1, 0]}>
+                    <group scale={3} position={[-0.3, -5, 0]} rotation={[0, -0.1, 0]}>
                       <DemoScreen texture={currentProject.texture}/>
                     </ group>
                   </Suspense>

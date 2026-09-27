@@ -8,7 +8,6 @@ Title: Rook Chess piece
 
 import React, { useRef } from 'react'
 import { Float, useGLTF } from '@react-three/drei'
-import { useFrame } from '@react-three/fiber';
 
 const RockChess = (props) => {
   const { nodes, materials } = useGLTF('/models/rook_chess_piece.glb');

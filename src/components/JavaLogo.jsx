@@ -7,12 +7,11 @@ Title: Java
 */
 
 import React, { useRef } from 'react'
-import { Float, useGLTF, useAnimations } from '@react-three/drei'
+import { Float, useGLTF } from '@react-three/drei'
 
 const JavaLogo = (props) => {
   const group = useRef()
-  const { nodes, materials, animations } = useGLTF('/models/java.glb')
-  const { actions } = useAnimations(animations, group)
+  const { nodes, materials } = useGLTF('/models/java.glb')
   return (
     <Float floatIntensity={1}>
       <group ref={group} {...props} dispose={null} name="Sketchfab_Scene">

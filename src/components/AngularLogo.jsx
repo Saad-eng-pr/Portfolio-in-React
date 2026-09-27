@@ -7,12 +7,11 @@ Title: Angular Brand
 */
 
 import React, { useRef } from 'react'
-import { Float, useGLTF, useAnimations } from '@react-three/drei'
+import { Float, useGLTF } from '@react-three/drei'
 
 const AngularLogo = (props) => {
   const group = useRef()
-  const { nodes, materials, animations } = useGLTF('/models/angular_brand.glb')
-  const { actions } = useAnimations(animations, group)
+  const { nodes, materials } = useGLTF('/models/angular_brand.glb')
   return (
     <Float floatIntensity={2.5}>
       <group ref={group} {...props} dispose={null} name="Sketchfab_Scene">

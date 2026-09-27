@@ -6,7 +6,7 @@ Source: https://sketchfab.com/3d-models/javascript-b220d3f7900f49b6a0d1f0ad15e2d
 Title: javascript
 */
 
-import React, { useRef } from 'react'
+import React from 'react'
 import { Float, useGLTF } from '@react-three/drei'
 
 const JavascriptLogo = (props) => {

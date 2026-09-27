@@ -6,7 +6,7 @@ Source: https://sketchfab.com/3d-models/chess-piece-pawn-58ea80dc181241e68096b05
 Title: Chess Piece Pawn
 */
 
-import React, { useRef } from 'react'
+import React from 'react'
 import { Float, useGLTF } from '@react-three/drei'
 
 const PawnChess = (props) => {

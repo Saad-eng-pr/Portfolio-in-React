@@ -6,31 +6,14 @@ Source: https://sketchfab.com/3d-models/chess-piece-queen-e1bd054f088e4c928740c4
 Title: Chess Piece Queen
 */
 
-import React, { useRef, useState } from 'react'
+import React, { useRef } from 'react'
 import { Float, useGLTF } from '@react-three/drei'
-import { useFrame } from '@react-three/fiber'
-import { useGSAP } from '@gsap/react'
-import gsap from 'gsap'
 
 const QueenChess = (props) => {
   const { nodes, materials } = useGLTF('/models/chess_piece_queen.glb')
 
   const queenRef = useRef();
   
-  // const [hovered, setHovered] = useState(false);
-
-  // useGSAP(() => {
-  //   gsap.timeline({repeat : -1, repeatDelay: 0.5})
-  //       .to(queenRef.current.rotation, {
-  //         y: hovered ? '+=2' : `+=${Math.PI * 2}`,
-  //         x: hovered ? '+=2' : `-=${Math.PI * 2}`,
-  //         duration : 2.5,
-  //         stagger: {
-  //           each: 0.15
-  //         },
-  //       });
-  // });
-
   return (
     <Float >
       <group {...props} dispose={null} scale={0.18} >
@@ -41,7 +24,6 @@ const QueenChess = (props) => {
           position={[-7.671, 0, 7.592]}
           rotation={[-Math.PI / 2, 0, 0]}
           scale={2.54}
-          onPointerEnter={() => setHovered(true)}
         />
       </group>
     </Float>

@@ -1,11 +1,8 @@
 import React from 'react'
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
+import { PerspectiveCamera } from "@react-three/drei";
 import CanvasLoader from "../components/CanvasLoader";
 import { Suspense } from "react";
-import { useMediaQuery } from "react-responsive";
-import { calculateSizes } from "../constants";
-import Puydedome from '../components/Puydedome';
 import BunnyDetective from '../components/BunnyDetective';
 
 
@@ -16,11 +13,11 @@ const About = () => {
         <div className='grid xl:grid-cols-3 xl:grid-rows-2 md:grid-cols-3 grid-cols-1 gap-5 h-full grid-flow-row-dense auto-rows-auto'>
             <div className='col-span-1 xl:row-span-1'>
                 <div className='grid-container items-center'>
-                    <img src="/assets/profile-pic.png" alt="grid-1" className='xl:mt-24 w-[90%]  h-fit object-contain' />
+                    <img src="/assets/profile.jpeg" alt="grid-1" className='xl:mt-24 w-[90%]  h-fit object-contain' />
 
                     <div > 
                         <p className='grid-headtext xl:text-xl'>Rebonjour, c'est Saad AMAL</p>
-                        <p className='grid-subtext xl:text-xl'>Étudiant en dernière année du cycle ingénieur à l'ISIMA, spécialisé en Génie Logiciel et Systèmes Informatiques.</p>
+                        <p className='grid-subtext xl:text-xl'>Jeune diplômé ingénieur de l'ISIMA en informatique, spécialisé en génie logiciel et systèmes informatiques.</p>
                     </div>
                 </div>
             </div>
@@ -37,9 +34,8 @@ const About = () => {
                     </Canvas>
 
                     <div>
-                        <p className='grid-headtext xl:text-xl'> Actuellement à la recherche</p>
-                        <p className='grid-subtext xl:text-xl'>d'un stage de fin d'études de 5 à 6 mois à partir d'avril 2026 en développement logiciel et/ou web.
-Curieux et motivé à apprendre et à me développer, j'aimerais participer à des projets concrets et enrichissants, tout en confrontant mes compétences à des défis variés.</p>
+                        <p className='grid-headtext xl:text-xl'>À la recherche d'un premier emploi</p>
+                        <p className='grid-subtext xl:text-xl'>Diplômé ingénieur en informatique, je recherche un premier poste en développement logiciel et/ou web. Curieux et motivé, je souhaite contribuer à des projets concrets et enrichissants tout en continuant à développer mes compétences.</p>
                     </div>
                 </div>
             </div>
@@ -56,8 +52,8 @@ Curieux et motivé à apprendre et à me développer, j'aimerais participer à d
                         </Suspense>
                     </Canvas> */}
 
-                        <img src="/assets/about-pic.jpg" alt="about-pic" className='sm:hidden xl:block xl:border xl:rounded-xl xl:h[200px] xl:border-black-200 xl:mt-6'/>
-                        <p className='grid-subtext xl:text-xl '>Je suis une personne curieuse, ouverte aux nouvelles expériences et opportunités, toujours prêt à apprendre et à relever de nouveaux challenges. 
+                        <img src="/assets/about-pic.jpg" alt="Illustration de présentation" className='sm:hidden xl:block xl:border xl:rounded-xl xl:h-[200px] xl:border-black-200 xl:mt-6'/>
+                        <p className='grid-subtext xl:text-xl '>Je suis une personne curieuse, ouverte aux nouvelles expériences et opportunités, toujours prêt à apprendre et à relever de nouveaux défis.
                             Passionné par l'informatique, le développement logiciel et l'intelligence artificielle, je cherche constamment à approfondir mes compétences dans ces domaines.</p>
                         <p className='grid-subtext xl:text-xl mt-4 '>En dehors du domaine professionnel, je suis un grand amateur de romans policiers, avec une affection particulière pour les œuvres d'Agatha Christie. 
                             Engagé et dynamique, je m'investis aussi dans des activités volontaires, cherchant à contribuer positivement autour de moi et à explorer de nouvelles perspectives.</p>
@@ -82,7 +78,7 @@ Curieux et motivé à apprendre et à me développer, j'aimerais participer à d
 
                     <div>
                         <p className='grid-headtext xl:text-xl xl:mt-24'>Centres d'intérêt</p>
-                        <p className='grid-subtext xl:text-xl'>Si mes rubiks attirent votre attention, vous avez déjà deviné ma passion pour collectionner les variantes de Rubik’s Cube ! En dehors de ça, je m’évade en jouant aux échecs, en lisant des mangas, et je reste actif avec la course et le MMA.</p>
+                        <p className='grid-subtext xl:text-xl'>Si mes Rubik's Cubes attirent votre attention, vous avez déjà deviné ma passion pour collectionner leurs différentes variantes ! En dehors de cela, je m'évade en jouant aux échecs et en lisant, notamment des romans comme <em>1984</em> de George Orwell, mon préféré, ou encore <em>Of Mice and Men</em> de John Steinbeck. Je reste également actif avec la course et la musculation.</p>
                     </div>
                 </div>
             </div>

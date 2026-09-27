@@ -41,7 +41,7 @@ const Hero = () => {
 
         <div className="flex justify-center gap-4">
           <button
-            onClick={() => window.open('/assets/CV-Saad.AMAL.pdf')}
+            onClick={() => window.open('/assets/CV-Saad-AMAL.pdf', '_blank', 'noopener,noreferrer')}
             className="text-white-600 px-6 w-40 font-semibold rounded-full border border-gray-700 
                       hover:bg-black-200 hover:text-white transition-all duration-300 h-[60px] text-center"
           >
@@ -72,15 +72,15 @@ const Hero = () => {
               />
             </HeroCamera>
             <group>
-              <CsharpLogo position={sizes.csharpPosition} />  
+              {/* <CsharpLogo position={sizes.csharpPosition} />   */}
               <ReactLogo position={sizes.reactLogoPosition}/>
               <JavaLogo position={sizes.javaPosition}/>
-              <CppLogo position={sizes.cppPosition} />
+              {/* <CppLogo position={sizes.cppPosition} /> */}
               <AngularLogo position={sizes.angularLogoPosition} />
               <JavascriptLogo position={sizes.javascriptPosition} />
               <RubiksCube position={sizes.rubiksCubePosition} />
               <Pyraminx position={sizes.pyraminxPosition} />
-              <SkewCube position={sizes.skewCubePosition} />
+              {/* <SkewCube position={sizes.skewCubePosition} /> */}
               <SkewedCube position={sizes.skewedCubePosition} />
               <PawnChess position={sizes.pawnChessPosition} />
               <QueenChess position={sizes.queenChessPosition} />
