@@ -41,7 +41,7 @@ const Hero = () => {
 
         <div className="flex justify-center gap-4">
           <button
-            onClick={() => window.open('/assets/CV-Saad-AMAL.pdf', '_blank', 'noopener,noreferrer')}
+            onClick={() => window.open('/assets/CV-Saad_AMAL.pdf', '_blank', 'noopener,noreferrer')}
             className="text-white-600 px-6 w-40 font-semibold rounded-full border border-gray-700 
                       hover:bg-black-200 hover:text-white transition-all duration-300 h-[60px] text-center"
           >
